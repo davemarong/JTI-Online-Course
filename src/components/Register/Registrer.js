@@ -1,12 +1,19 @@
-//   Imports
+//   IMPORT
+
+// React
 import React from "react";
 import { useState } from "react";
+// MUI
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+// Utils
+
+// Other
 import axios from "axios";
+
 // FUNCTIONAL COMPONENT
-export default function Register({ setJwt }) {
+export default function Registrer({ setJwt }) {
   //   State
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
@@ -22,10 +29,6 @@ export default function Register({ setJwt }) {
   const handlePasswordInput = (event) => {
     setPassword(event.target.value);
   };
-  const handle = () => {
-    console.log("Done");
-    setJwt("New value");
-  };
   const handleRegisterUser = () => {
     axios
       .post("http://localhost:1337/auth/local/register", {
@@ -34,13 +37,9 @@ export default function Register({ setJwt }) {
         password: password,
       })
       .then((response) => {
-        // Handle success.
-        console.log("Well done!");
         console.log("User profile", response.data.user);
-        console.log("User token", response.data.jwt);
       })
       .catch((error) => {
-        // Handle error.
         console.log("An error occurred:", error.response);
       });
   };
@@ -62,7 +61,6 @@ export default function Register({ setJwt }) {
       <Button onClick={handleRegisterUser} variant="contained">
         Registrer!
       </Button>
-      <Button onClick={handle}>Set jwt</Button>
     </div>
   );
 }
