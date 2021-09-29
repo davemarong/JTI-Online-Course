@@ -1,20 +1,17 @@
 //   Imports
 import React from "react";
-import { useState, useContext } from "react";
+import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import axios from "axios";
-import { UserData } from "../Context/UserDataProvider";
 // FUNCTIONAL COMPONENT
-export default function Register() {
+export default function Register({ setJwt }) {
   //   State
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const [email, setEmail] = useState();
 
-  //   Context
-  const { jwt, setJwt } = useContext(UserData);
   //   Functions
   const handleEmailInput = (event) => {
     setEmail(event.target.value);
@@ -25,7 +22,7 @@ export default function Register() {
   const handlePasswordInput = (event) => {
     setPassword(event.target.value);
   };
-  const handleJwt = () => {
+  const handle = () => {
     console.log("Done");
     setJwt("New value");
   };
@@ -50,7 +47,6 @@ export default function Register() {
   //   Return
   return (
     <div>
-      {jwt}
       <Typography variant="h3">Registrer deg</Typography>
       <TextField onChange={handleEmailInput} label="Email" variant="outlined" />
       <TextField
@@ -66,7 +62,7 @@ export default function Register() {
       <Button onClick={handleRegisterUser} variant="contained">
         Registrer!
       </Button>
-      <Button onClick={handleJwt}>Change jwt</Button>
+      <Button onClick={handle}>Set jwt</Button>
     </div>
   );
 }
