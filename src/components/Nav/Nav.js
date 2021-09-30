@@ -1,6 +1,11 @@
+//   IMPORT
+// React
 import React from "react";
+// Next
 import Link from "next/link";
+// Components
 import { NavItems } from "./NavItems";
+// Functional components
 export default function Nav() {
   return (
     <div>

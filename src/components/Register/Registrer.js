@@ -3,6 +3,8 @@
 // React
 import React from "react";
 import { useState } from "react";
+// Next
+import Router from "next/router";
 // MUI
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
@@ -38,6 +40,7 @@ export default function Registrer({ setJwt }) {
       })
       .then((response) => {
         console.log("User profile", response.data.user);
+        Router.push("/logg-inn");
       })
       .catch((error) => {
         console.log("An error occurred:", error.response);
