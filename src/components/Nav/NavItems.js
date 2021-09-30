@@ -6,5 +6,5 @@ export const NavItems = [
   { title: "Kontakt", href: "/kontakt", id: 4 },
   { title: "Registrer", href: "/registrer", id: 5 },
   { title: "Logg Inn", href: "/logg-inn", id: 6 },
-  { title: "Checkout", href: "/stripe-checkout", id: 7 },
+  { title: "Checkout", href: "/checkout", id: 7 },
 ];
