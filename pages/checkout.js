@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 // Next
 import Router from "next/router";
@@ -9,28 +9,12 @@ const stripePromise = loadStripe(
 );
 
 export default function PreviewPage({ paid, setPaid }) {
-  React.useEffect(() => {
+  useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
-
     if (query.get("success")) {
-      // setPaid("Paid");
-      // Router.push("/registrer");
-
-      // axios
-      //   .put("http://localhost:1337/users-permissions/roles/Paid", {
-      //     headers: {
-      //       Authorization: `Bearer ${token}`,
-      //     },
-      //   })
-      //   .then((response) => {
-      //     // Handle success.
-      //     console.log("Data: ", response.data);
-      //   })
-      //   .catch((error) => {
-      //     // Handle error.
-      //     console.log("An error occurred:", error.response);
-      //   });
+      setPaid(true);
+      Router.push("/registrer");
       console.log("Order placed! You will receive an email confirmation.");
     }
 
