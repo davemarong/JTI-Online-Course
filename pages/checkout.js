@@ -1,18 +1,36 @@
 import React from "react";
 import { loadStripe } from "@stripe/stripe-js";
-
+// Next
+import Router from "next/router";
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
 const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
-export default function PreviewPage() {
+export default function PreviewPage({ paid, setPaid }) {
   React.useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
 
     if (query.get("success")) {
+      // setPaid("Paid");
+      // Router.push("/registrer");
+
+      // axios
+      //   .put("http://localhost:1337/users-permissions/roles/Paid", {
+      //     headers: {
+      //       Authorization: `Bearer ${token}`,
+      //     },
+      //   })
+      //   .then((response) => {
+      //     // Handle success.
+      //     console.log("Data: ", response.data);
+      //   })
+      //   .catch((error) => {
+      //     // Handle error.
+      //     console.log("An error occurred:", error.response);
+      //   });
       console.log("Order placed! You will receive an email confirmation.");
     }
 
