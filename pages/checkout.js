@@ -14,6 +14,7 @@ export default function PreviewPage({ paid, setPaid }) {
     const query = new URLSearchParams(window.location.search);
     if (query.get("success")) {
       setPaid(true);
+      localStorage.setItem("Paid", "true");
       Router.push("/registrer");
       console.log("Order placed! You will receive an email confirmation.");
     }

@@ -1,21 +1,19 @@
 //   IMPORT
 
 // React
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 // Next
 import Router from "next/router";
 // MUI
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-// Utils
 
 // Other
 import axios from "axios";
 
 // FUNCTIONAL COMPONENT
-export default function Registrer({ setJwt }) {
+export default function Registrer({ setJwt, setPaid }) {
   //   State
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
@@ -40,6 +38,7 @@ export default function Registrer({ setJwt }) {
       })
       .then((response) => {
         console.log("User profile", response.data.user);
+        localStorage.removeItem("Paid");
         Router.push("/logg-inn");
       })
       .catch((error) => {
