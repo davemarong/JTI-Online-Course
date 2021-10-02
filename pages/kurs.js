@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../src/components/Nav/Nav";
 import axios from "axios";
-export default function kurs({ jwt }) {
+export default function kurs({ jwt, isLogged }) {
   const update = () => {
     axios
       .put("http://localhost:1337/users-permissions/roles/Paid", {
@@ -21,7 +21,7 @@ export default function kurs({ jwt }) {
   return (
     <div>
       <h1>Kurs</h1>
-      <Nav />
+      <Nav isLogged={isLogged} />
       <button onClick={update}>Update</button>
     </div>
   );

@@ -10,7 +10,7 @@ const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
-export default function PreviewPage({ paid, setPaid }) {
+export default function PreviewPage({ paid, setPaid, isLogged }) {
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
@@ -30,7 +30,7 @@ export default function PreviewPage({ paid, setPaid }) {
 
   return (
     <>
-      <Nav />
+      <Nav isLogged={isLogged} />
       <form action="/api/checkout_sessions" method="POST">
         <section>
           <button type="submit" role="link">

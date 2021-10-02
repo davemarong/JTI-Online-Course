@@ -5,7 +5,7 @@ export default function Home({ jwt, isLogged }) {
       {isLogged ? "true" : "false"}
       {jwt}
       <h1>Hjem</h1>
-      <Nav />
+      <Nav isLogged={isLogged} />
     </div>
   );
 }
