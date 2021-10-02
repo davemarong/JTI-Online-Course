@@ -1,10 +1,10 @@
 import Nav from "../src/components/Nav/Nav";
-export default function Home({ jwt, setJwt, isLogged, setIsLogged }) {
+export default function Home({ jwt, isLogged }) {
   return (
     <div>
-      <h1>Hjem</h1>
-      {isLogged ? "True" : "False"}
+      {isLogged ? "true" : "false"}
       {jwt}
+      <h1>Hjem</h1>
       <Nav />
     </div>
   );

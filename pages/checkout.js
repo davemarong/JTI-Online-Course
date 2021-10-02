@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
+import Nav from "../src/components/Nav/Nav";
+
 // Next
 import Router from "next/router";
 // Make sure to call `loadStripe` outside of a component’s render to avoid
@@ -27,39 +29,42 @@ export default function PreviewPage({ paid, setPaid }) {
   }, []);
 
   return (
-    <form action="/api/checkout_sessions" method="POST">
-      <section>
-        <button type="submit" role="link">
-          Checkout
-        </button>
-      </section>
-      <style jsx>
-        {`
-          section {
-            background: #ffffff;
-            display: flex;
-            flex-direction: column;
-            width: 400px;
-            height: 112px;
-            border-radius: 6px;
-            justify-content: space-between;
-          }
-          button {
-            height: 36px;
-            background: #556cd6;
-            border-radius: 4px;
-            color: white;
-            border: 0;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
-          }
-          button:hover {
-            opacity: 0.8;
-          }
-        `}
-      </style>
-    </form>
+    <>
+      <Nav />
+      <form action="/api/checkout_sessions" method="POST">
+        <section>
+          <button type="submit" role="link">
+            Checkout
+          </button>
+        </section>
+        <style jsx>
+          {`
+            section {
+              background: #ffffff;
+              display: flex;
+              flex-direction: column;
+              width: 400px;
+              height: 112px;
+              border-radius: 6px;
+              justify-content: space-between;
+            }
+            button {
+              height: 36px;
+              background: #556cd6;
+              border-radius: 4px;
+              color: white;
+              border: 0;
+              font-weight: 600;
+              cursor: pointer;
+              transition: all 0.2s ease;
+              box-shadow: 0px 4px 5.5px 0px rgba(0, 0, 0, 0.07);
+            }
+            button:hover {
+              opacity: 0.8;
+            }
+          `}
+        </style>
+      </form>
+    </>
   );
 }

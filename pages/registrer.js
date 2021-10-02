@@ -11,7 +11,7 @@ export default function registrer({ paid, setPaid }) {
   }, []);
   return (
     <div>
-      <Nav />
+      <Nav isLogged={isLogged} />
       {paid ? <Registrer setPaid={setPaid} /> : "Du har ikke betalt"}
     </div>
   );
