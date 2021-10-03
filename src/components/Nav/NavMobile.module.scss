@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  height: auto;
+
+  .nav_item {
+    .nav_item_a {
+      color: brown;
+      text-decoration: none;
+      font-size: large;
+      transition: color 0.3s;
+    }
+    .nav_item_a:hover {
+      color: black;
+    }
+  }
+}
+.nav_hidden {
+  height: 0;
+  overflow: hidden;
+}
