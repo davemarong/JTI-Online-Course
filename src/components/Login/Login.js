@@ -9,6 +9,8 @@ import Router from "next/router";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
+
 // Utils
 
 // Other
@@ -19,11 +21,8 @@ export default function Register({ setJwt, setIsLogged }) {
   //   State
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
-
+  const [isLoading, setIsLoading] = useState(false);
   //   Functions
-  const handleEmailInput = (event) => {
-    setEmail(event.target.value);
-  };
   const handleUsernameInput = (event) => {
     setUsername(event.target.value);
   };
@@ -31,7 +30,8 @@ export default function Register({ setJwt, setIsLogged }) {
     setPassword(event.target.value);
   };
 
-  const handleRegisterUser = () => {
+  const handleLoginUser = () => {
+    setIsLoading(true);
     axios
       .post("http://localhost:1337/auth/local", {
         identifier: username,
@@ -61,9 +61,10 @@ export default function Register({ setJwt, setIsLogged }) {
         label="Passord"
         variant="outlined"
       />
-      <Button onClick={handleRegisterUser} variant="contained">
+      <Button onClick={handleLoginUser} variant="contained">
         Logg inn!
       </Button>
+      {isLoading && <CircularProgress />}
     </div>
   );
 }

@@ -8,6 +8,7 @@ import Router from "next/router";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
 
 // Other
 import axios from "axios";
@@ -18,6 +19,7 @@ export default function Registrer({ setJwt, setPaid }) {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const [email, setEmail] = useState();
+  const [isLoading, setIsLoading] = useState(false);
 
   //   Functions
   const handleEmailInput = (event) => {
@@ -63,6 +65,7 @@ export default function Registrer({ setJwt, setPaid }) {
       <Button onClick={handleRegisterUser} variant="contained">
         Registrer!
       </Button>
+      {isLoading && <CircularProgress />}
     </div>
   );
 }
