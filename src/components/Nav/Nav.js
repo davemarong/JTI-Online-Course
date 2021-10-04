@@ -5,6 +5,9 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 // Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import IconButton from "@mui/material/IconButton";
+
 // Components
 import { NavItemsPublic, NavItemsLoggedIn } from "./NavItems";
 // Styles
@@ -46,7 +49,11 @@ export default function Nav({ isLogged }) {
   // Return
   return (
     <nav className={styles.nav_container}>
-      {!matches && <button onClick={handleToggleNav}>Open</button>}
+      {!matches && (
+        <IconButton>
+          <MenuRoundedIcon onClick={handleToggleNav}>Open</MenuRoundedIcon>
+        </IconButton>
+      )}
       <ul ref={mobileNav} className={styles.nav}>
         {navItems.map((item, id) => {
           return (
