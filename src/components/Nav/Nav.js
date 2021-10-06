@@ -50,8 +50,8 @@ export default function Nav({ isLogged }) {
   return (
     <nav className={styles.nav_container}>
       {!matches && (
-        <IconButton>
-          <MenuRoundedIcon onClick={handleToggleNav}>Open</MenuRoundedIcon>
+        <IconButton onClick={handleToggleNav}>
+          <MenuRoundedIcon>Open</MenuRoundedIcon>
         </IconButton>
       )}
       <ul ref={mobileNav} className={styles.nav}>

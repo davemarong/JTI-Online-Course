@@ -1,0 +1,32 @@
+.chapter_container {
+  list-style-type: none;
+  .chapter_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .chapter_header:hover {
+    background-color: #fff8dc;
+  }
+}
+
+.videos_container {
+  padding: 0;
+  overflow: hidden;
+
+  .videoTitle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  .videoTitle:hover {
+    background-color: #fff8dc;
+  }
+  .videoTitle_checkbox {
+    margin-left: 0;
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}

@@ -1,28 +1,18 @@
-import React from "react";
+// IMPORT
+
+// React
+import React, { useState } from "react";
+// Components
 import Nav from "../src/components/Nav/Nav";
-import axios from "axios";
-export default function kurs({ jwt, isLogged }) {
-  const update = () => {
-    axios
-      .put("http://localhost:1337/users-permissions/roles/Paid", {
-        headers: {
-          Authorization: `Bearer ${jwt}`,
-        },
-      })
-      .then((response) => {
-        // Handle success.
-        console.log("Data: ", response.data);
-      })
-      .catch((error) => {
-        // Handle error.
-        console.log("An error occurred:", error.response);
-      });
-  };
+import VideoMeny from "../src/components/VideoMeny/VideoMeny";
+export default function kurs({ isLogged }) {
+  // State
+  const [curentVideo, setCurrentVideo] = useState();
   return (
     <div>
-      <h1>Kurs</h1>
       <Nav isLogged={isLogged} />
-      <button onClick={update}>Update</button>
+      <h1>Kurs</h1>
+      <VideoMeny curentVideo={curentVideo} setCurrentVideo={setCurrentVideo} />
     </div>
   );
 }
