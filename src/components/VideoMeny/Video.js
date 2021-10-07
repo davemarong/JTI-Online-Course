@@ -30,7 +30,7 @@ export default function Video({
     setCurrentVideo(video);
   };
   return (
-    <div>
+    <div key={chapter.id}>
       <ul className={styles.chapter_container}>
         <li onClick={handleOpenChapter} className={styles.chapter_header}>
           <h1>
@@ -46,20 +46,21 @@ export default function Video({
             {chapter.map((video, id) => {
               return (
                 <>
-                  <li
-                    onClick={() => {
-                      handleChangeVideo(video.href);
-                    }}
-                    class={styles.videoTitle}
+                  <Link
+                    key={video.id}
+                    href="/kurs/[video].js"
+                    as={`/kurs/${video.chapter}-${video.id}`}
                   >
-                    <input
-                      className={styles.videoTitle_checkbox}
-                      type="checkbox"
-                    />
-                    <p>
-                      {video.chapter}-{video.id}: {video.title}
-                    </p>
-                  </li>
+                    <a className={styles.videoTitle}>
+                      <input
+                        className={styles.videoTitle_checkbox}
+                        type="checkbox"
+                      />
+                      <p>
+                        {video.chapter}-{video.id}: {video.title}
+                      </p>
+                    </a>
+                  </Link>
                 </>
               );
             })}

@@ -4,7 +4,7 @@ export const videos = [
       id: "01",
       title: "Introduksjon",
       status: "incomplete",
-      href: "hei",
+      href: "01",
       chapter: "01",
       chapterName: "Introduksjon",
     },
@@ -12,14 +12,14 @@ export const videos = [
       id: "02",
       title: "Hvorfor?",
       status: "incomplete",
-      href: "hei",
+      href: "02",
       chapter: "01",
     },
     {
       id: "03",
       title: "Hvordan?",
       status: "incomplete",
-      href: "hei",
+      href: "03",
       chapter: "01",
     },
     {
@@ -32,7 +32,7 @@ export const videos = [
   ],
   [
     {
-      id: "04",
+      id: "01",
       title: "Hvem lagde JTI?",
       status: "incomplete",
       href: "hei",
@@ -40,14 +40,14 @@ export const videos = [
       chapterName: "Hva er JTI?",
     },
     {
-      id: "04",
+      id: "02",
       title: "Hvilken kategorier?",
       status: "incomplete",
       href: "hei",
       chapter: "02",
     },
     {
-      id: "04",
+      id: "03",
       title: "De 4 store",
       status: "incomplete",
       href: "hei",
