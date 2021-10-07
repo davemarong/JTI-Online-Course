@@ -7,7 +7,8 @@ import Link from "next/link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import IconButton from "@mui/material/IconButton";
-
+// Framer motion
+import { motion, useCycle } from "framer-motion";
 // Components
 import { NavItemsPublic, NavItemsLoggedIn } from "./NavItems";
 // Styles
@@ -22,6 +23,8 @@ export default function Nav({ isLogged }) {
   const matches = useMediaQuery("(min-width:600px)");
   // Ref
   const mobileNav = useRef(null);
+  // Framer motion hook
+  const [openNav, cycleOpenNav] = useCycle("auto", 0);
   // Effect
   useEffect(() => {
     if (isLogged) {
@@ -46,15 +49,18 @@ export default function Nav({ isLogged }) {
       mobileNav.current.className = `${styles.nav}`;
     }
   };
+  const handleOpenNav = () => {
+    cycleOpenNav();
+  };
   // Return
   return (
     <nav className={styles.nav_container}>
       {!matches && (
-        <IconButton onClick={handleToggleNav}>
+        <IconButton onClick={handleOpenNav}>
           <MenuRoundedIcon>Open</MenuRoundedIcon>
         </IconButton>
       )}
-      <ul ref={mobileNav} className={styles.nav}>
+      <motion.ul animate={{ height: openNav }} className={styles.nav}>
         {navItems.map((item, id) => {
           return (
             <li className={styles.nav_item} key={item.id}>
@@ -64,7 +70,7 @@ export default function Nav({ isLogged }) {
             </li>
           );
         })}
-      </ul>
+      </motion.ul>
     </nav>
   );
 }
