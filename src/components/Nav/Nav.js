@@ -1,6 +1,6 @@
 //   IMPORT
 // React
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 // Next
 import Link from "next/link";
 // Material UI
@@ -21,8 +21,6 @@ export default function Nav({ isLogged }) {
   const [styles, setStyles] = useState(desktopStyles);
   // Media query
   const matches = useMediaQuery("(min-width:600px)");
-  // Ref
-  const mobileNav = useRef(null);
   // Framer motion hook
   const [openNav, cycleOpenNav] = useCycle("auto", 0);
   // Effect
@@ -42,13 +40,6 @@ export default function Nav({ isLogged }) {
   }, [matches]);
 
   // Functions
-  const handleToggleNav = () => {
-    if (mobileNav.current.className === `${styles.nav}`) {
-      mobileNav.current.className = `${styles.nav_hidden}`;
-    } else {
-      mobileNav.current.className = `${styles.nav}`;
-    }
-  };
   const handleOpenNav = () => {
     cycleOpenNav();
   };

@@ -16,6 +16,7 @@ export default function VideoMeny({ currentVideo, setCurrentVideo }) {
         {videos.map((chapter, chapterId) => {
           return (
             <Video
+              key={chapterId}
               chapter={chapter}
               chapterId={chapterId}
               setCurrentVideo={setCurrentVideo}

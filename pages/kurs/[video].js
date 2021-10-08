@@ -8,7 +8,6 @@ import VideoMeny from "../../src/components/VideoMeny/VideoMeny";
 export default function videoPage() {
   const router = useRouter();
   const { video } = router.query;
-  console.log(router.query);
   return (
     <div>
       <Nav />

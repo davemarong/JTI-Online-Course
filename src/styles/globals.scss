@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
+@font-face {
+  font-family: "MrEaves";
+  src: url("/jti/public/font/mr-eaves-font/MrEavesXLModOT-Reg.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MrEaves";
+  src: url("/jti/public/font/mr-eaves-font/MrEavesXLModOT-RegItalic.ttf");
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MrEaves";
+  src: url("/jti/public/font/mr-eaves-font/MrEavesXLModOT-Bold.ttf");
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "varela", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+h1 {
+  font-family: "varela", sans-serif;
+  font-weight: 900;
+}
+h2 {
+  font-family: "varela", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

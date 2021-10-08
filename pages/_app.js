@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../src/styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   const [jwt, setJwt] = useState();
