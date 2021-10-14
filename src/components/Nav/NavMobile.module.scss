@@ -1,3 +1,5 @@
+@use "../../styles/colors.scss";
+
 .nav {
   display: flex;
   flex-direction: column;
@@ -6,8 +8,10 @@
   overflow: hidden;
 
   .nav_item {
+    margin: 10px 0;
+
     .nav_item_a {
-      color: brown;
+      color: colors.$text;
       text-decoration: none;
       font-size: large;
       transition: color 0.3s;
@@ -16,8 +20,24 @@
       color: black;
     }
   }
+  .navMainButton {
+    color: white;
+    font-size: medium;
+    background-color: colors.$main;
+    width: 155px;
+    height: 40px;
+    border: 0;
+    margin: 10px 0;
+  }
 }
 .nav_hidden {
   height: 0;
   overflow: hidden;
+}
+.logo {
+}
+.nav_hamburgerIcon {
+  position: absolute;
+  right: 0px;
+  top: 50px;
 }

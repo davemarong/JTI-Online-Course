@@ -1,17 +1,48 @@
+@use "../../styles/colors.scss";
+
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   list-style-type: none;
+  padding-bottom: 25px;
 
   .nav_item {
     .nav_item_a {
-      color: brown;
-      text-decoration: none;
+      color: colors.$text;
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      text-decoration-thickness: 2px;
       font-size: large;
-      transition: all 0.3s;
+      transition: 0.3s;
+      margin: 8px;
     }
     .nav_item_a:hover {
-      color: black;
+      text-decoration-color: colors.$main;
     }
+  }
+  .navMainButton {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    color: white;
+    font-size: medium;
+    background-color: colors.$main;
+    width: 155px;
+    height: 40px;
+    border: 0;
+  }
+  .navMainButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+.logo {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .navMainButton {
+    // margin-left: auto;
+    position: absolute;
   }
 }
