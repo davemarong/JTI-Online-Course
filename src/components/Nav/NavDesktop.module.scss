@@ -1,10 +1,11 @@
 @use "../../styles/colors.scss";
+@use "../../styles//buttons.scss";
 
 .nav {
   display: flex;
   justify-content: center;
   list-style-type: none;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 
   .nav_item {
     .nav_item_a {
@@ -23,17 +24,11 @@
   .navMainButton {
     position: absolute;
     right: 20px;
-    top: 80px;
-    color: white;
-    font-size: medium;
-    background-color: colors.$main;
-    width: 155px;
-    height: 40px;
-    border: 0;
+    top: 55px;
+    @include buttons.main;
   }
   .navMainButton:hover {
-    opacity: 0.8;
-    cursor: pointer;
+    @include buttons.hover;
   }
 }
 .logo {

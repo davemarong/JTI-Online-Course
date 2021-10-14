@@ -8,15 +8,13 @@ export default function Homepage() {
     <div>
       <div className={styles.topSection}>
         <h1 className={styles.topSection_h1}>
-          Forstå styrkene til menneskene rundt deg
+          Hvordan forstå styrkene til menneskene rundt deg?
         </h1>
         <p className={styles.topSection_p}>
-          Bruk JTI til å optimalisere og effektivisere samspill på din
-          arbeidsplass
+          {/* Bruk JTI til å optimalisere og effektivisere samspill på din
+          arbeidsplass */}
         </p>
-        <Button className={styles.topSection_button} variant="contained">
-          SE KURS
-        </Button>
+        <button className={styles.topSection_button}>SE KURS</button>
       </div>
     </div>
   );

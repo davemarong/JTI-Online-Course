@@ -53,7 +53,7 @@ export default function Nav({ isLogged }) {
     <>
       <Link href="/">
         <a className={styles.logo}>
-          <Image src={logo} width="250" height="125" />
+          <Image src={logo} width="200" height="100" />
         </a>
       </Link>
       <nav>
