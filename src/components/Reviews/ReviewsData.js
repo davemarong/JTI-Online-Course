@@ -3,6 +3,7 @@ import review2 from "../../../public/images/review2.png";
 import review3 from "../../../public/images/review3.png";
 export const reviewsData = [
   {
+    id: 0,
     src: review1,
     name: "Anders",
     message:
@@ -11,6 +12,7 @@ export const reviewsData = [
     company: "Psykologi for alle",
   },
   {
+    id: 1,
     src: review2,
     name: "Jens",
     message:
@@ -19,6 +21,7 @@ export const reviewsData = [
     company: "Brando",
   },
   {
+    id: 2,
     src: review3,
     name: "Camilla",
     message:
