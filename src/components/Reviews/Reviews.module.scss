@@ -1,0 +1,58 @@
+@use "../../styles/colors.scss";
+
+.review_container {
+  background-color: colors.$background-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  .review_h2 {
+    text-align: center;
+    font-size: 1.7rem;
+    width: 100%;
+    margin: 40px;
+  }
+  .review {
+    min-width: 60%;
+    max-width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    margin-bottom: 75px;
+    .review_image {
+      grid-area: 1 / 1/ 3 / 2;
+      align-self: center;
+    }
+    .review_message {
+      grid-area: 1/ 2/ 2/ 3;
+      font-size: 1.3rem;
+      align-self: end;
+    }
+    .review_credentials {
+      grid-area: 2/ 2/ 3/ 3;
+      color: colors.$main-dark;
+      font-size: 0.9rem;
+      font-weight: 900;
+      align-self: center;
+      margin-top: 0;
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .review_container .review {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 1020px) {
+  .review_container .review {
+    max-width: 55%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .review_container .review {
+    min-width: 40%;
+    max-width: 40%;
+  }
+}

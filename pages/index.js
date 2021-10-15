@@ -1,8 +1,7 @@
 import Homepage from "../src/components/Homepage/Homepage";
-import TopSection from "../src/components/Homepage/TopSection";
 import Nav from "../src/components/Nav/Nav";
 import Head from "next/head";
-
+import Reviews from "../src/components/Reviews/Reviews";
 export default function Home({ jwt, isLogged }) {
   return (
     <div>
@@ -14,6 +13,7 @@ export default function Home({ jwt, isLogged }) {
       </Head>
       <Nav isLogged={isLogged} />
       <Homepage />
+      <Reviews />
     </div>
   );
 }
