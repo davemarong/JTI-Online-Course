@@ -4,6 +4,7 @@ import Head from "next/head";
 import Reviews from "../src/components/Reviews/Reviews";
 import JTI_Icons from "../src/components/JTI_Icons/JTI_Icons";
 import HowToUse from "../src/components/HowToUse/HowToUse";
+import Footer from "../src/components/Footer/Footer";
 export default function Home({ jwt, isLogged }) {
   return (
     <div>
@@ -15,9 +16,10 @@ export default function Home({ jwt, isLogged }) {
       </Head>
       <Nav isLogged={isLogged} />
       <Homepage />
-      <JTI_Icons />
-      <Reviews />
       <HowToUse />
+      <Reviews />
+      <JTI_Icons />
+      <Footer isLogged={isLogged} />
     </div>
   );
 }

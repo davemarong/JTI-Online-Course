@@ -1,9 +1,11 @@
 import React from "react";
 // MUI
 import Button from "@mui/material/Button";
-
+// Styles
 import styles from "./Homepage.module.scss";
+// Functional components
 export default function Homepage() {
+  // Return
   return (
     <div>
       <div className={styles.topSection}>

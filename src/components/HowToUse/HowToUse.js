@@ -1,10 +1,21 @@
+//   IMPORT
+// React
 import React from "react";
+// Components
 import { howToUseData } from "./HowToUseData";
+// Styles
 import styles from "./HowToUse.module.scss";
+// Functional components
 export default function HowToUse() {
+  // Return
   return (
     <div className={styles.step_container}>
       <h2 className={styles.h2}>Hvordan funker det?</h2>
+      <div className={styles.trackbar}>
+        <span className={styles.trackbar_step}></span>
+        <span className={styles.trackbar_step}></span>
+        <span className={styles.trackbar_step}></span>
+      </div>
       {howToUseData.map((step, id) => {
         return (
           <div className={styles.step} key={step.id}>

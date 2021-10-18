@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 // Next
 import Link from "next/link";
 import Image from "next/image";
-
 // Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -16,18 +15,21 @@ import { NavItemsPublic, NavItemsLoggedIn } from "./NavItems";
 // Styles
 import desktopStyles from "./NavDesktop.module.scss";
 import mobileStyles from "./NavMobile.module.scss";
-
 // Assets
 import logo from "../../../public/images/logo.png";
 // Functional components
+
 export default function Nav({ isLogged }) {
   // State
   const [navItems, setNavItems] = useState(NavItemsPublic);
   const [styles, setStyles] = useState(desktopStyles);
+
   // Media query
   const matches = useMediaQuery("(min-width:600px)");
+
   // Framer motion hook
   const [openNav, cycleOpenNav] = useCycle(0, "auto");
+
   // Effect
   useEffect(() => {
     if (isLogged) {
@@ -48,6 +50,7 @@ export default function Nav({ isLogged }) {
   const handleOpenNav = () => {
     cycleOpenNav();
   };
+
   // Return
   return (
     <>

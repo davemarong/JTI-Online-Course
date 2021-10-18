@@ -1,0 +1,40 @@
+@use "../../styles/buttons.scss";
+@use "../../styles/colors.scss";
+
+.footer {
+  background-color: colors.$dark;
+  color: white;
+  padding: 65px 30px 35px 30px;
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .nav {
+    margin: 50px 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    .nav_item {
+      .nav_item_link_a {
+        margin: 10px;
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-decoration-thickness: 2px;
+        transition: 0.3s;
+      }
+      .nav_item_link_a:hover {
+        text-decoration-color: colors.$main;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    font-size: small;
+    .codebydave {
+      border-bottom: 1px solid white;
+    }
+  }
+}

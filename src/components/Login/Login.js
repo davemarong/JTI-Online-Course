@@ -10,9 +10,6 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
-
-// Utils
-
 // Other
 import axios from "axios";
 
@@ -22,6 +19,7 @@ export default function Register({ setJwt, setIsLogged }) {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
   const [isLoading, setIsLoading] = useState(false);
+
   //   Functions
   const handleUsernameInput = (event) => {
     setUsername(event.target.value);
@@ -29,7 +27,6 @@ export default function Register({ setJwt, setIsLogged }) {
   const handlePasswordInput = (event) => {
     setPassword(event.target.value);
   };
-
   const handleLoginUser = () => {
     setIsLoading(true);
     axios
@@ -47,6 +44,7 @@ export default function Register({ setJwt, setIsLogged }) {
         console.log("An error occurred:", error.response);
       });
   };
+
   //   Return
   return (
     <div>

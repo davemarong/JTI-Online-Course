@@ -1,8 +1,15 @@
+//   IMPORT
+// React
 import React from "react";
-import { reviewsData } from "./ReviewsData";
+// Next
 import Image from "next/image";
+// Components
+import { reviewsData } from "./ReviewsData";
+// Styles
 import styles from "./Reviews.module.scss";
+// Functional component
 export default function Reviews() {
+  // Return
   return (
     <div className={styles.review_container}>
       <h2 className={styles.review_h2}>Dette sier folk om JTI Online kurs</h2>

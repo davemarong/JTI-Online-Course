@@ -1,8 +1,15 @@
+//   IMPORT
+// React
 import React from "react";
-import { jti_iconsData } from "./JTI_IconsData";
+// Next
 import Image from "next/image";
+// Components
+import { jti_iconsData } from "./JTI_IconsData";
+// Styles
 import styles from "./JTI_Icons.module.scss";
+// Functional components
 export default function JTI_Icons() {
+  // Return
   return (
     <div className={styles.icon_container}>
       <h2 className={styles.h2}> Hvordan kan JTI hjelpe deg?</h2>
