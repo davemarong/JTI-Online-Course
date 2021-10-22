@@ -35,7 +35,7 @@ export default function Footer({ isLogged }) {
       <ul className={styles.nav}>
         {navItems.map((item, id) => {
           return (
-            <li className={styles.nav_item}>
+            <li key={item.id} className={styles.nav_item}>
               <Link className={styles.nav_item_link} href={item.href}>
                 <a className={styles.nav_item_link_a}>{item.title}</a>
               </Link>

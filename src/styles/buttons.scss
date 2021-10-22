@@ -19,3 +19,17 @@
 @mixin hover {
   background-color: colors.$main-hover;
 }
+@mixin transparent {
+  color: colors.$text;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: transparent;
+  width: 115px;
+  height: 35px;
+  border: 1px solid colors.$background-dark;
+  border-radius: 4px;
+  cursor: pointer;
+}
+@mixin transparent-hover {
+  border: 1px solid colors.$background-hover;
+}

@@ -4,13 +4,14 @@
 import React, { useState } from "react";
 // Components
 import Nav from "../../src/components/Nav/Nav";
+import Video from "../../src/components/Video/Video";
 import VideoMeny from "../../src/components/VideoMeny/VideoMeny";
 export default function index({ isLogged, setCurrentVideo, currentVideo }) {
   // State
   return (
     <div>
       <Nav isLogged={isLogged} />
-      <h1>Kurs</h1>
+      <Video />
       <VideoMeny
         currentVideo={currentVideo}
         setCurrentVideo={setCurrentVideo}
