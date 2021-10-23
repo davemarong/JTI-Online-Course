@@ -6,6 +6,7 @@ import Nav from "../../src/components/Nav/Nav";
 import Video from "../../src/components/Video/Video";
 import VideoMeny from "../../src/components/VideoMeny/VideoMeny";
 import VideoFooter from "../../src/components/Video/VideoFooter";
+import VideoDescription from "../../src/components/VideoDescription/VideoDescription";
 // FUNCTIONAL COMPONENT
 export default function videoPage({ setCurrentVideo, currentVideo, jwt }) {
   const router = useRouter();
@@ -14,11 +15,16 @@ export default function videoPage({ setCurrentVideo, currentVideo, jwt }) {
     <div>
       <Nav />
       <Video />
-      <VideoFooter currentVideo={currentVideo} videoTitle={video} />
+      <VideoFooter
+        currentVideo={currentVideo}
+        videoTitle={video}
+        setCurrentVideo={setCurrentVideo}
+      />
       <VideoMeny
         setCurrentVideo={setCurrentVideo}
         currentVideo={currentVideo}
       />
+      <VideoDescription currentVideo={currentVideo} />
     </div>
   );
 }

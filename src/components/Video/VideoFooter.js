@@ -1,7 +1,7 @@
 // IMPORT
 
 // React
-import React from "react";
+import React, { useEffect } from "react";
 // Next
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -13,7 +13,11 @@ import styles from "./VideoFooter.module.scss";
 import ArrowForwardIosRoundedIcon from "@mui/icons-material/ArrowForwardIosRounded";
 import ArrowBackIosNewRoundedIcon from "@mui/icons-material/ArrowBackIosNewRounded";
 // Functional component
-export default function VideoFooter({ videoTitle, currentVideo }) {
+export default function VideoFooter({
+  videoTitle,
+  currentVideo,
+  setCurrentVideo,
+}) {
   // Router
   const router = useRouter();
   const { video } = router.query;
@@ -26,6 +30,11 @@ export default function VideoFooter({ videoTitle, currentVideo }) {
     });
     return [...allEpisodes[0], ...allEpisodes[1]];
   };
+  // Effect
+  useEffect(() => {
+    let [, chapter, , , episode] = video.split("");
+    setCurrentVideo(videos[chapter - 1][episode - 1]);
+  }, [video]);
   // Variables
   const allEpisodes = findAllEpisodes();
 
@@ -42,7 +51,9 @@ export default function VideoFooter({ videoTitle, currentVideo }) {
   return (
     <div className={styles.videoFooter}>
       <div className={styles.videoFooter_description_container}>
-        <h3 className={styles.videoFooter_description_title}>{videoTitle}</h3>
+        <h3 className={styles.videoFooter_description_title}>
+          {videoTitle}: {currentVideo.title}
+        </h3>
         <p className={styles.description_sigridØyen}>Sigrid Øyen</p>
       </div>
       <div className={styles.videoFooter_buttons_container}>
