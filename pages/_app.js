@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   const [jwt, setJwt] = useState();
   const [isLogged, setIsLogged] = useState(false);
   const [paid, setPaid] = useState(false);
-  const [currentVideo, setCurrentVideo] = useState();
+  const [currentVideo, setCurrentVideo] = useState("nope");
   return (
     <Component
       {...pageProps}

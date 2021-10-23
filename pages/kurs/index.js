@@ -6,7 +6,12 @@ import React, { useState } from "react";
 import Nav from "../../src/components/Nav/Nav";
 import Video from "../../src/components/Video/Video";
 import VideoMeny from "../../src/components/VideoMeny/VideoMeny";
-export default function index({ isLogged, setCurrentVideo, currentVideo }) {
+export default function index({
+  isLogged,
+  setCurrentVideo,
+  currentVideo,
+  jwt,
+}) {
   // State
   return (
     <div>
@@ -16,7 +21,6 @@ export default function index({ isLogged, setCurrentVideo, currentVideo }) {
         currentVideo={currentVideo}
         setCurrentVideo={setCurrentVideo}
       />
-      <div>Current video is {currentVideo}</div>
     </div>
   );
 }

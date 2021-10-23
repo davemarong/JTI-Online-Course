@@ -78,6 +78,7 @@ export default function Nav({ isLogged }) {
               </li>
             );
           })}
+
           <div>
             <button className={styles.navMainButton}>KURS ONLINE</button>
           </div>

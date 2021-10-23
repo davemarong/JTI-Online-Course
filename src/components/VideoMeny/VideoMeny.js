@@ -5,14 +5,14 @@ import React from "react";
 // Assets
 import { videos } from "../../assets/Videos";
 // Styles
-import styles from "./VideoMeny.module.scss";
+import styles from "./Video.module.scss";
 // Components
 import Video from "./Video";
 
 export default function VideoMeny({ currentVideo, setCurrentVideo }) {
   return (
     <div>
-      <ul>
+      <ul className={styles.ul_container}>
         {videos.map((chapter, chapterId) => {
           return (
             <Video

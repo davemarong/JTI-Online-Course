@@ -1,7 +1,13 @@
+@use "../../styles/buttons.scss";
+@use "../../styles/colors.scss";
+
 .chapter_container {
   list-style-type: none;
+  margin: 0px 70px;
+  padding: 0;
   .chapter_header {
     display: flex;
+    font-size: 0.6rem;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
@@ -14,7 +20,6 @@
 .videos_container {
   padding: 0;
   overflow: hidden;
-
   .videoTitle {
     cursor: pointer;
     display: flex;

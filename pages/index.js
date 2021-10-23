@@ -8,6 +8,7 @@ import Footer from "../src/components/Footer/Footer";
 export default function Home({ jwt, isLogged }) {
   return (
     <div>
+      {jwt}
       <Head>
         <link
           href="https://fonts.googleapis.com/css2?family=Inter&display=optional"

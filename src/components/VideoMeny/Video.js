@@ -29,6 +29,7 @@ export default function Video({
   const handleChangeVideo = (video) => {
     setCurrentVideo(video);
   };
+
   return (
     <div>
       <ul className={styles.chapter_container}>
@@ -47,10 +48,14 @@ export default function Video({
               return (
                 <Link
                   key={video.id}
-                  href="/kurs/[video].js"
-                  as={`/kurs/${video.chapter}-${video.id}`}
+                  href={`/kurs/${video.chapter}-${video.id}`}
                 >
-                  <a className={styles.videoTitle}>
+                  <a
+                    onClick={() => {
+                      setCurrentVideo(video);
+                    }}
+                    className={styles.videoTitle}
+                  >
                     <input
                       className={styles.videoTitle_checkbox}
                       type="checkbox"

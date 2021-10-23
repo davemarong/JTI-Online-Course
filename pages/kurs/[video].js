@@ -7,15 +7,18 @@ import Video from "../../src/components/Video/Video";
 import VideoMeny from "../../src/components/VideoMeny/VideoMeny";
 import VideoFooter from "../../src/components/Video/VideoFooter";
 // FUNCTIONAL COMPONENT
-export default function videoPage({ currentVideo }) {
+export default function videoPage({ setCurrentVideo, currentVideo, jwt }) {
   const router = useRouter();
   const { video } = router.query;
   return (
     <div>
       <Nav />
       <Video />
-      <VideoFooter videoTitle={video} />
-      <VideoMeny />
+      <VideoFooter currentVideo={currentVideo} videoTitle={video} />
+      <VideoMeny
+        setCurrentVideo={setCurrentVideo}
+        currentVideo={currentVideo}
+      />
     </div>
   );
 }
