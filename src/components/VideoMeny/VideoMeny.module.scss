@@ -3,9 +3,10 @@
 
 .chapter_container {
   list-style-type: none;
-  margin: 0px 70px;
+  // margin: 0px 70px;
   padding: 0;
   .chapter_header {
+    padding-left: 10px;
     display: flex;
     font-size: 0.6rem;
     align-items: center;
@@ -19,8 +20,10 @@
 
 .videos_container {
   padding: 0;
+
   overflow: hidden;
   .videoTitle {
+    padding-left: 10px;
     cursor: pointer;
     display: flex;
     align-items: center;

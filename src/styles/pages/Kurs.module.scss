@@ -1,0 +1,50 @@
+@use "../../styles/buttons.scss";
+@use "../../styles/colors.scss";
+
+.body {
+  margin: 0px 70px;
+}
+.videoPlayer {
+}
+.videoFooter {
+  border: 1px solid colors.$background-dark;
+  border-bottom: 0;
+}
+.videoData_container {
+  display: flex;
+  .videoData_meny {
+    border: 1px solid colors.$background-dark;
+    border-right: 0;
+    padding: 0px;
+    flex: 7;
+  }
+  .videoData_description {
+    border: 1px solid colors.$background-dark;
+    padding: 30px;
+    flex: 10;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .body {
+    margin: 0px;
+  }
+  .videoPlayer {
+  }
+  .videoFooter {
+  }
+  .videoData_container .videoData_meny {
+    margin: 0px;
+    flex: 1;
+    border-bottom: 0;
+  }
+  .videoData_container .videoData_description {
+    flex: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .videoData_container {
+    flex-direction: column;
+  }
+  .videoData_container .videoData_description {
+  }
+}

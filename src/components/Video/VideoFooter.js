@@ -20,7 +20,10 @@ export default function VideoFooter({
 }) {
   // Router
   const router = useRouter();
-  const { video } = router.query;
+  let { video } = router.query;
+  if (video == undefined) {
+    video = "01-01";
+  }
   // Functions
   const findAllEpisodes = () => {
     let allEpisodes = videos.map((chapter, id) => {
