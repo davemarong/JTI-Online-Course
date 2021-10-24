@@ -9,7 +9,8 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
-
+// Styles
+import styles from "./Register.module.scss";
 // Other
 import axios from "axios";
 
@@ -49,22 +50,29 @@ export default function Registrer({ setJwt, setPaid }) {
   };
   //   Return
   return (
-    <div>
-      <Typography variant="h3">Registrer deg</Typography>
-      <TextField onChange={handleEmailInput} label="Email" variant="outlined" />
+    <div className={styles.register}>
+      <h1>Registrer deg</h1>
       <TextField
+        className={styles.register_input}
+        onChange={handleEmailInput}
+        label="Email"
+        variant="outlined"
+      />
+      <TextField
+        className={styles.register_input}
         onChange={handleUsernameInput}
         label="Brukernavn"
         variant="outlined"
       />
       <TextField
+        className={styles.register_input}
         onChange={handlePasswordInput}
         label="Passord"
         variant="outlined"
       />
-      <Button onClick={handleRegisterUser} variant="contained">
+      <button className={styles.register_button} onClick={handleRegisterUser}>
         Registrer!
-      </Button>
+      </button>
       {isLoading && <CircularProgress />}
     </div>
   );
