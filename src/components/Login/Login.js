@@ -10,6 +10,8 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
+// Styles
+import styles from "./Login.module.scss";
 // Other
 import axios from "axios";
 
@@ -47,22 +49,26 @@ export default function Register({ setJwt, setIsLogged }) {
 
   //   Return
   return (
-    <div>
-      <Typography variant="h3">Logg inn</Typography>
-      <TextField
-        onChange={handleUsernameInput}
-        label="Brukernavn/Email"
-        variant="outlined"
-      />
-      <TextField
-        onChange={handlePasswordInput}
-        label="Passord"
-        variant="outlined"
-      />
-      <Button onClick={handleLoginUser} variant="contained">
-        Logg inn!
-      </Button>
-      {isLoading && <CircularProgress />}
-    </div>
+    <>
+      <div className={styles.login}>
+        <h1 className={styles.login_h1}>Logg inn</h1>
+        <TextField
+          className={styles.login_input}
+          onChange={handleUsernameInput}
+          label="Brukernavn/Email"
+          variant="outlined"
+        />
+        <TextField
+          className={styles.login_input}
+          onChange={handlePasswordInput}
+          label="Passord"
+          variant="outlined"
+        />
+        <button className={styles.login_button} onClick={handleLoginUser}>
+          Logg inn!
+        </button>
+        {isLoading && <CircularProgress />}
+      </div>
+    </>
   );
 }
