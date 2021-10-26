@@ -13,6 +13,13 @@ export default function registrer({ paid, setPaid, isLogged }) {
     <div>
       <Nav isLogged={isLogged} />
       {paid ? <Registrer setPaid={setPaid} /> : "Du har ikke betalt"}
+      <button
+        onClick={() => {
+          setPaid("true");
+        }}
+      >
+        Pay fast
+      </button>
     </div>
   );
 }
