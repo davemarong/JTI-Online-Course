@@ -33,6 +33,8 @@ export default function Registrer({ setJwt, setPaid }) {
     setPassword(event.target.value);
   };
   const handleRegisterUser = () => {
+    setIsLoading(true);
+
     axios
       .post("http://localhost:1337/auth/local/register", {
         username: username,
@@ -42,9 +44,12 @@ export default function Registrer({ setJwt, setPaid }) {
       .then((response) => {
         console.log("User profile", response.data.user);
         localStorage.removeItem("Paid");
+        setIsLoading(false);
         Router.push("/logg-inn");
       })
       .catch((error) => {
+        setIsLoading(false);
+
         console.log("An error occurred:", error.response);
       });
   };

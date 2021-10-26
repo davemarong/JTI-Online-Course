@@ -3,7 +3,7 @@
 .step_container {
   display: flex;
   flex-wrap: wrap;
-  margin: 150px 40px;
+  margin: 150px 70px;
   .h2 {
     width: 100%;
     text-align: center;
@@ -11,6 +11,7 @@
   .trackbar {
     display: flex;
     width: 100%;
+    margin: auto;
     border-bottom: 2px solid colors.$dark;
     .trackbar_step {
       border: 1px solid black;

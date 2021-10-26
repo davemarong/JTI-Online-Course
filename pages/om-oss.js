@@ -1,6 +1,7 @@
 import React from "react";
 import Nav from "../src/components/Nav/Nav";
-
+import OmOss from "../src/components/OmOss/OmOss";
+import Footer from "../src/components/Footer/Footer";
 export default function omOss({
   isLogged,
   jwt,
@@ -9,9 +10,9 @@ export default function omOss({
 }) {
   return (
     <div>
-      <h1>Om oss</h1>
-
       <Nav isLogged={isLogged} />
+      <OmOss />
+      <Footer />
     </div>
   );
 }

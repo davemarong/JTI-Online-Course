@@ -40,10 +40,12 @@ export default function Register({ setJwt, setIsLogged }) {
         console.log("User profile", response.data.user);
         setJwt(response.data.jwt);
         setIsLogged(true);
+        setIsLoading(false);
         Router.push("/kurs");
       })
       .catch((error) => {
         console.log("An error occurred:", error.response);
+        setIsLoading(false);
       });
   };
 
