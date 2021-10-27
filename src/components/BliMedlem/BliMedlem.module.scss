@@ -1,0 +1,69 @@
+@use "../../styles/buttons.scss";
+@use "../../styles/colors.scss";
+
+.bliMedlem {
+  background-color: colors.$background-light;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 70px;
+  .bliMedlem_h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .bliMedlem_p {
+    text-align: center;
+    width: 100%;
+  }
+  .bliMedlem_vanlig {
+    background-color: colors.$white;
+    max-width: 300px;
+    padding: 20px;
+    flex: 1;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px;
+  }
+  .bliMedlem_premium {
+    background-color: colors.$white;
+    max-width: 300px;
+    padding: 20px;
+    flex: 1;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px;
+  }
+  .bliMedlem_card_button_container {
+    display: flex;
+    justify-content: center;
+    .bliMedlem_card_button {
+      @include buttons.main;
+      margin-bottom: 10px;
+      width: 90%;
+    }
+    .bliMedlem_card_button:hover {
+      @include buttons.hover;
+    }
+  }
+  .bliMedlem_card_h2 {
+    text-align: center;
+  }
+  .bliMedlem_card_h3 {
+    text-align: center;
+  }
+  .bliMedlem_card_p {
+    text-align: center;
+  }
+  .bliMedlem_card_ul {
+    list-style: none;
+    padding: 0;
+    .bliMedlem_card_ul_li {
+      display: flex;
+      align-items: center;
+      margin: 10px;
+      .bliMedlem_card_ul_li_icon {
+        color: green;
+        margin-right: 10px;
+      }
+    }
+  }
+}

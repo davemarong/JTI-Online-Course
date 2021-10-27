@@ -1,0 +1,49 @@
+@use "../../styles/buttons.scss";
+@use "../../styles/colors.scss";
+
+.kursInfo {
+  background-color: colors.$white;
+  .kursInfo_title {
+    text-align: center;
+    padding-top: 80px;
+  }
+  .kursInfo_vanlig {
+    padding: 100px 150px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .kursInfo_premium {
+    padding: 100px 150px;
+    display: flex;
+    color: colors.$white;
+    background-color: colors.$main;
+    flex-direction: row-reverse;
+    gap: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .kursInfo_h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .kursInfo_p {
+    flex: 1;
+  }
+  .kursInfo_img {
+    display: flex;
+    flex: 1 1;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .kursInfo .kursInfo_premium {
+    padding: 50px;
+    flex-direction: column;
+  }
+  .kursInfo .kursInfo_vanlig {
+    padding: 50px;
+    flex-direction: column;
+  }
+}

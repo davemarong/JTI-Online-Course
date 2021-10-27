@@ -6,6 +6,7 @@ function MyApp({ Component, pageProps }) {
   const [isLogged, setIsLogged] = useState(false);
   const [paid, setPaid] = useState(false);
   const [currentVideo, setCurrentVideo] = useState("nope");
+  const [course, setCourse] = useState("Premium");
   return (
     <Component
       {...pageProps}
@@ -17,6 +18,8 @@ function MyApp({ Component, pageProps }) {
       setPaid={setPaid}
       currentVideo={currentVideo}
       setCurrentVideo={setCurrentVideo}
+      course={course}
+      setCourse={setCourse}
     />
   );
 }

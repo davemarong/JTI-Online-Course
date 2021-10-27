@@ -79,9 +79,11 @@ export default function Nav({ isLogged }) {
             );
           })}
 
-          <div>
-            <button className={styles.navMainButton}>KURS ONLINE</button>
-          </div>
+          <Link href="/bli-medlem">
+            <a>
+              <button className={styles.navMainButton}>Bli Medlem</button>
+            </a>
+          </Link>
         </motion.ul>
       </nav>
     </>

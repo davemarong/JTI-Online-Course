@@ -2,7 +2,7 @@
 @use "../../styles/colors.scss";
 
 .body {
-  margin: 0px 70px;
+  margin: 0px 70px 50px 70px;
 }
 .videoPlayer {
 }
@@ -26,7 +26,7 @@
 }
 @media only screen and (max-width: 800px) {
   .body {
-    margin: 0px;
+    margin: 0px 0px 50px 0px;
   }
   .videoPlayer {
   }
@@ -35,7 +35,6 @@
   .videoData_container .videoData_meny {
     margin: 0px;
     flex: 1;
-    border-bottom: 0;
   }
   .videoData_container .videoData_description {
     flex: 1;
@@ -46,5 +45,8 @@
     flex-direction: column;
   }
   .videoData_container .videoData_description {
+  }
+  .videoData_container .videoData_meny {
+    border-bottom: 0;
   }
 }
