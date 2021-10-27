@@ -13,7 +13,7 @@ export default function BliMedlem({ course, setCourse }) {
       </p>
       {bliMedlemData.map((data, id) => {
         return (
-          <div className={data.className}>
+          <div key={data.id} className={data.className}>
             <h2 className={styles.bliMedlem_card_h2}>{data.title}</h2>
             <p className={styles.bliMedlem_card_p}>{data.description}</p>
             <h3 className={styles.bliMedlem_card_h3}>{data.price}</h3>
@@ -22,7 +22,7 @@ export default function BliMedlem({ course, setCourse }) {
                 <a className={styles.bliMedlem_card_button_container}>
                   <button
                     onClick={() => {
-                      setCourse(data.title);
+                      setCourse(data);
                     }}
                     className={styles.bliMedlem_card_button}
                   >
@@ -36,7 +36,7 @@ export default function BliMedlem({ course, setCourse }) {
             <ul className={styles.bliMedlem_card_ul}>
               {data.includes.map((feature, id) => {
                 return (
-                  <li className={styles.bliMedlem_card_ul_li}>
+                  <li key={id} className={styles.bliMedlem_card_ul_li}>
                     <CheckCircleOutlineIcon
                       className={styles.bliMedlem_card_ul_li_icon}
                     />

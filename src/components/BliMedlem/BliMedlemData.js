@@ -1,6 +1,7 @@
 import styles from "./BliMedlem.module.scss";
 export const bliMedlemData = [
   {
+    id: 0,
     title: "Vanlig",
     description: "Se hele kurset når du vil, hvor du vil.",
     price: "1199 kr",
@@ -12,6 +13,8 @@ export const bliMedlemData = [
     className: styles.bliMedlem_vanlig,
   },
   {
+    id: 1,
+
     title: "Premium",
     description: "Se hele kurset når du vil, hvor du vil.",
     price: "2999 kr",

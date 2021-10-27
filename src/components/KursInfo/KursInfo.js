@@ -8,7 +8,7 @@ export default function KursInfo() {
       <h2 className={styles.kursInfo_title}>Hva inneholder kursene?</h2>
       {kursInfoData.map((kurs, id) => {
         return (
-          <div className={kurs.className}>
+          <div key={kurs.id} className={kurs.className}>
             <h2 className={styles.kursInfo_h2}>{kurs.title}</h2>
             {/* <div className={styles.kursInfo_main}> */}
             <p className={styles.kursInfo_p}>{kurs.description}</p>
