@@ -6,7 +6,14 @@ function MyApp({ Component, pageProps }) {
   const [isLogged, setIsLogged] = useState(false);
   const [paid, setPaid] = useState(false);
   const [currentVideo, setCurrentVideo] = useState("nope");
-  const [course, setCourse] = useState({ title: "", includes: [""] });
+  const [course, setCourse] = useState({
+    className: "",
+    description: "",
+    id: 0,
+    includes: [],
+    price: null,
+    title: "Ingen pakke valgt",
+  });
   return (
     <Component
       {...pageProps}

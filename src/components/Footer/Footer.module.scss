@@ -2,9 +2,17 @@
 @use "../../styles/colors.scss";
 
 .footer {
-  background-color: colors.$dark;
-  color: white;
+  // background-color: colors.$dark;
+  color: colors.$text;
   padding: 65px 30px 35px 30px;
+  .footer_hr {
+    margin: auto;
+    margin-bottom: 20px;
+    height: 2px;
+    width: 80%;
+    background-color: colors.$background-dark;
+    border-radius: 50px;
+  }
   .logo {
     display: flex;
     justify-content: center;

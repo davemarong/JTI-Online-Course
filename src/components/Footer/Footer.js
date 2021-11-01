@@ -27,6 +27,7 @@ export default function Footer({ isLogged }) {
   // Return
   return (
     <div className={styles.footer}>
+      <div className={styles.footer_hr} />
       <Link href="/">
         <a className={styles.logo}>
           <Image src={logo} width="200" height="100" />
