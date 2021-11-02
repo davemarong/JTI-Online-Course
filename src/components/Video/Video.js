@@ -11,7 +11,7 @@ export default function Video() {
   return (
     <div className={styles.video_container}>
       <div className={styles.video}>
-        <Image src={video} width="1200" />
+        <Image src={video} width="1400" />
       </div>
     </div>
   );

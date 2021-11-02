@@ -16,7 +16,7 @@ import { NavItemsPublic, NavItemsLoggedIn } from "./NavItems";
 import desktopStyles from "./NavDesktop.module.scss";
 import mobileStyles from "./NavMobile.module.scss";
 // Assets
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.svg";
 // Functional components
 
 export default function Nav({ isLogged }) {
@@ -54,11 +54,13 @@ export default function Nav({ isLogged }) {
   // Return
   return (
     <>
-      <Link href="/">
-        <a className={styles.logo}>
-          <Image src={logo} width="200" height="100" />
-        </a>
-      </Link>
+      <div className={styles.logo}>
+        <Link href="/">
+          <a>
+            <Image src={logo} width="250" height="100" />
+          </a>
+        </Link>
+      </div>
       <nav>
         {!matches && (
           <IconButton

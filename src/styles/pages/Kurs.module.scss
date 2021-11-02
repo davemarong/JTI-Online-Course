@@ -5,6 +5,8 @@
   margin: 0px 70px 50px 70px;
 }
 .videoPlayer {
+  position: relative;
+  top: 6px;
 }
 .videoFooter {
   border: 1px solid colors.$background-dark;

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 // Assets
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.svg";
 // Styles
 import styles from "./Footer.module.scss";
 // Components

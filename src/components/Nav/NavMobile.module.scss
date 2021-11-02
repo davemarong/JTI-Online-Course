@@ -7,7 +7,7 @@
   list-style-type: none;
   height: auto;
   overflow: hidden;
-
+  margin-top: 0;
   .nav_item {
     margin: 10px 0;
 
@@ -30,10 +30,13 @@
   height: 0;
   overflow: hidden;
 }
+
 .logo {
+  margin-left: 10px;
 }
+
 .nav_hamburgerIcon {
   position: absolute;
   right: 0px;
-  top: 50px;
+  top: 30px;
 }

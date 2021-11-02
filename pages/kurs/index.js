@@ -32,7 +32,12 @@ export default function index({
             />
           </div>
           <div className={styles.videoData_description}>
-            <VideoDescription currentVideo={currentVideo} />
+            <h2 style={{ margin: 0 }}>Beskrivelse av kurs: </h2>
+            <p>
+              Velkommen til Online kurs i JTI av Sigrid Øyen. I løpet av dette
+              kurset vil du lære alt du trenger å vite for å kunne bruke JTI i
+              din egen hverdag
+            </p>
           </div>
         </div>
       </div>
