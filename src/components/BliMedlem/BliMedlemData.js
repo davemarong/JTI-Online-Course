@@ -22,7 +22,7 @@ export const bliMedlemData = [
       "Tilgang til alle videoer",
       "Offisiell JTI test",
       "Finn din egen JTI-type",
-      "1 time privat opplæring av Sigrid Øyen",
+      "1 time privat opplæring",
     ],
     className: styles.bliMedlem_premium,
   },

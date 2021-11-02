@@ -1,8 +1,9 @@
 @use "../../styles/buttons.scss";
 @use "../../styles/colors.scss";
+@use "../../styles/layout.scss";
 
 .body {
-  margin: 0px 70px 50px 70px;
+  margin: 0px layout.$body-margin 50px layout.$body-margin;
 }
 .videoPlayer {
   position: relative;

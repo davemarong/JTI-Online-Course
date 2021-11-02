@@ -17,6 +17,14 @@
       transition: 0.3s;
       margin: 15px;
     }
+    .nav_item_a_active {
+      color: colors.$text;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-decoration-color: colors.$main;
+      font-size: large;
+      margin: 15px;
+    }
     .nav_item_a:hover {
       text-decoration-color: colors.$main;
     }

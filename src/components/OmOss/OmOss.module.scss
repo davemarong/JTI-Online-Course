@@ -1,5 +1,6 @@
 @use "../../styles/buttons.scss";
 @use "../../styles/colors.scss";
+@use "../../styles/layout.scss";
 
 .aboutUs {
   .aboutUs_topSection {
@@ -23,7 +24,7 @@
   .aboutUs_mainSection {
     display: flex;
     gap: 70px;
-    margin: 70px;
+    margin: layout.$body-margin;
     .aboutUs_mainSection_text {
       flex: 1;
     }

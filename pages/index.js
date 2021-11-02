@@ -17,9 +17,9 @@ export default function Home({ jwt, isLogged }) {
       </Head>
       <Nav isLogged={isLogged} />
       <Homepage />
-      <HowToUse />
-      <Reviews />
       <JTI_Icons />
+      <Reviews />
+      <HowToUse />
       <Footer isLogged={isLogged} />
     </div>
   );

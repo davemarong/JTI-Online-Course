@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 // Next
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
+
 // Material UI
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
@@ -30,6 +32,8 @@ export default function Nav({ isLogged }) {
   // Framer motion hook
   const [openNav, cycleOpenNav] = useCycle(0, "auto");
 
+  // Router
+  const router = useRouter();
   // Effect
   useEffect(() => {
     if (isLogged) {
@@ -50,7 +54,7 @@ export default function Nav({ isLogged }) {
   const handleOpenNav = () => {
     cycleOpenNav();
   };
-
+  console.log(router.pathname);
   // Return
   return (
     <>
@@ -75,7 +79,15 @@ export default function Nav({ isLogged }) {
             return (
               <li className={styles.nav_item} key={item.id}>
                 <Link href={item.href}>
-                  <a className={styles.nav_item_a}>{item.title}</a>
+                  <a
+                    className={
+                      router.pathname == item.href
+                        ? styles.nav_item_a_active
+                        : styles.nav_item_a
+                    }
+                  >
+                    {item.title}
+                  </a>
                 </Link>
               </li>
             );

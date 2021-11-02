@@ -1,11 +1,12 @@
 @use "../../styles/buttons.scss";
 @use "../../styles/colors.scss";
+@use "../../styles/layout.scss";
 
 .contact {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 70px;
+  margin: 50px layout.$body-margin;
   .contact_h1 {
     width: 100%;
     margin: 30px;

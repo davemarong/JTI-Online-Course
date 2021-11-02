@@ -1,4 +1,6 @@
 import React from "react";
+// Next
+import Link from "next/link";
 // MUI
 import Button from "@mui/material/Button";
 // Styles
@@ -16,7 +18,11 @@ export default function Homepage() {
           {/* Bruk JTI til å optimalisere og effektivisere samspill på din
           arbeidsplass */}
         </p>
-        <button className={styles.topSection_button}>SE KURS</button>
+        <Link href="/bli-medlem">
+          <a className={styles.topSection_button_container}>
+            <button className={styles.topSection_button}>SE KURS</button>
+          </a>
+        </Link>
       </div>
     </div>
   );
