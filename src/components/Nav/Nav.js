@@ -95,7 +95,7 @@ export default function Nav({ isLogged }) {
 
           <Link href="/bli-medlem">
             <a>
-              <button className={styles.navMainButton}>Bli Medlem</button>
+              <button className={styles.navMainButton}>KJØP KURS</button>
             </a>
           </Link>
         </motion.ul>

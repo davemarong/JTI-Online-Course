@@ -1,6 +1,6 @@
 export const NavItemsPublic = [
   { title: "Hjem", href: "/", id: 0 },
-  { title: "Kurs", href: "/kurs", id: 1 },
+  { title: "Se ditt Kurs", href: "/kurs", id: 1 },
   // { title: "Min Side", href: "/min-side", id: 2 },
   { title: "JTI", href: "/jti", id: 2 },
   { title: "Om Oss", href: "/om-oss", id: 3 },
@@ -13,7 +13,7 @@ export const NavItemsPublic = [
 ];
 export const NavItemsLoggedIn = [
   { title: "Hjem", href: "/", id: 0 },
-  { title: "Kurs", href: "/kurs", id: 1 },
+  { title: "Se Ditt Kurs", href: "/kurs", id: 1 },
   { title: "Min Side", href: "/min-side", id: 2 },
   { title: "JTI", href: "/jti", id: 3 },
   { title: "Om Oss", href: "/om-oss", id: 4 },

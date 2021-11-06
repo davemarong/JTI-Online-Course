@@ -14,7 +14,7 @@ export default function Checkout({ course }) {
         className={styles.checkout_form_container}
         action={`${
           course.price
-            ? "/api/checkout_sessions_${course.title}"
+            ? `/api/checkout_sessions_${course.title}`
             : "/bli-medlem"
         }`}
         method="POST"
