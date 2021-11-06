@@ -10,13 +10,7 @@ const stripePromise = loadStripe(
   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
 );
 
-export default function PreviewPage({
-  paid,
-  setPaid,
-  isLogged,
-  course,
-  setCourse,
-}) {
+export default function PreviewPage({ setPaid, isLogged, course, setCourse }) {
   useEffect(() => {
     // Check to see if this is a redirect back from Checkout
     const query = new URLSearchParams(window.location.search);
