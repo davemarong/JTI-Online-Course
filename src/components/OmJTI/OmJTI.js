@@ -3,7 +3,9 @@ import styles from "./OmJTI.module.scss";
 export default function OmJTI() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>JTI overskrift</h1>
+      <h1 style={{ textAlign: "center", backgroundColor: "lightblue" }}>
+        JTI overskrift
+      </h1>
       <div style={{ margin: 100 }}>
         <div
           style={{
@@ -12,13 +14,15 @@ export default function OmJTI() {
             boxShadow: "0 0 3px",
           }}
         >
-          <h2>
+          <h2 style={{ backgroundColor: "lightblue" }}>
             En video hvor du kort forklarer JTI her? Da kan vi vise frem
             kvaliteten på kurs/ video og fiske inn kunder.
           </h2>
         </div>
         <div>
-          <h2 style={{ textAlign: "center" }}>Mini overskrift?</h2>
+          <h2 style={{ textAlign: "center", backgroundColor: "lightblue" }}>
+            Mini overskrift?
+          </h2>
           <p>
             Dine preferanser påvirker deg kanskje mer enn du er klar over! Har
             du lyst til å forstå mer om hvordan dine preferanser påvirker deg,
@@ -41,7 +45,13 @@ export default function OmJTI() {
             (dimensjoner) i personligheten, med 8 preferanser fordelt på 4
             dimensjoner
           </p>
-          <h3 style={{ textAlign: "center", margin: 100 }}>
+          <h3
+            style={{
+              textAlign: "center",
+              margin: 100,
+              backgroundColor: "lightblue",
+            }}
+          >
             Bilde diagram av jti typer
           </h3>
           <p>
@@ -53,7 +63,7 @@ export default function OmJTI() {
         </div>
       </div>
 
-      <h1>
+      <h1 style={{ backgroundColor: "lightblue" }}>
         Korte litt ned på disse listene nedenfor? Det er litt mye tekst og det
         kan være vanskelig å finne informasjon man er ute etter. Eventuelt
         splitte denne opp i flere "komponenter/avsnitt" og ha egne overskrifter.
@@ -61,7 +71,9 @@ export default function OmJTI() {
       <div className={styles.container}>
         <ul className={styles.ul}>
           <h3>Fakta om JTI</h3>
-          <h2>Ha et bilde her? et vektor icon for eksempel.</h2>
+          <h2 style={{ backgroundColor: "lightblue" }}>
+            Ha et bilde her? et vektor icon for eksempel.
+          </h2>
           <li>
             JTI bygger på Carl Jungs typeteori, og måler personlige preferanser
             innen fire dimensjoner i personligheten (se under)
@@ -87,7 +99,9 @@ export default function OmJTI() {
         </ul>
         <ul className={styles.ul}>
           <h3> Hva kan JTI bidra med for enkeltpersoner</h3>
-          <h2>Ha et bilde her? et vektor icon for eksempel.</h2>
+          <h2 style={{ backgroundColor: "lightblue" }}>
+            Ha et bilde her? et vektor icon for eksempel.
+          </h2>
           <li>
             Sette pris på egne og andres spesielle evner og styrker. Lære
             hvordan jeg skal utnytte mine og andres styrker
@@ -119,7 +133,9 @@ export default function OmJTI() {
         </ul>
         <ul className={styles.ul}>
           <h3> Hva kan JTI bidra med for organisasjonen</h3>
-          <h2>Ha et bilde her? et vektor icon for eksempel.</h2>
+          <h2 style={{ backgroundColor: "lightblue" }}>
+            Ha et bilde her? et vektor icon for eksempel.
+          </h2>
           <li>
             Få en logisk ordnet modell for menneskelig adferd, en teori som er
             enkel å forstå
