@@ -42,34 +42,12 @@ export default function JTI_Icons() {
                 Les mer
               </button>
               <div className={styles.panel} style={{ display: open }}>
-                <ul className={styles.ul}>
-                  <li>
-                    JTI bygger på Carl Jungs typeteori, og måler personlige
-                    preferanser innen fire dimensjoner i personligheten (se
-                    under)
-                  </li>
-                  <li>JTI er et ikke evaluerende psykologisk verktøy</li>
-                  <li>
-                    Viser dine preferanser, hva du foretrekker når du står fritt
-                    til å velge
-                  </li>
-                  <li>JTI belyser først og fremst styrker og forskjeller</li>
-                  <li>
-                    Godt utprøvd, basert på grundig teori og grundig forskning
-                  </li>
-                  <li>Laget for normale mennesker i normale livssituasjoner</li>
-                  <li>Profesjonelt administrert og tolket</li>
-                  <li>
-                    Utviklet av Optimas org. Psykologer AS, fundamentert i
-                    Meyers Brigg
-                  </li>
-                  <li>
-                    JTI finnes på følgende språk: Norsk, Svensk, Dansk, Engelsk,
-                    Nederlandsk, Polsk, Tysk, Flamsk, Finsk, Estisk, Latvisk,
-                    Lithuansk, Italiensk, Fransk, Spansk og Mandarin
-                  </li>
-                  <li>Kvalitetssikret av DNV-GL (Veritas)</li>
+                <ul className={styles.ul} style={{ padding: 0 }}>
+                  <li>Finn dine preferanser</li>
+                  <li>JTI belyser styrker og forskjeller</li>
+                  <li>Basert på forskning</li>
                 </ul>
+                <button>Se mer</button>
               </div>
             </a>
           </>
