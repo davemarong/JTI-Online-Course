@@ -6,9 +6,9 @@ export const jti_iconsData = [
   {
     id: 0,
     src: icon1,
-    title: "Vekst",
+    title: "Hva er JTI?",
     description:
-      "Ved hjelp av JTI vil alle ansatte ha et bedre utgangspunkt for å jobbe på en mer effektiv måte.",
+      "JTI er forkortelse for Jungiansk Type Index og måler dine preferanser, våre forskjeller og våre styrker.",
   },
   {
     id: 1,

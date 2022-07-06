@@ -24,19 +24,16 @@ export default function OmJTI() {
             Mini overskrift?
           </h2>
           <p>
-            Dine preferanser påvirker deg kanskje mer enn du er klar over! Har
-            du lyst til å forstå mer om hvordan dine preferanser påvirker deg,
-            dine handlinger og dine relasjoner? Da er Jung Type Index et godt
-            verktøy. JTI er ikke en personlighetstest, og den måler hverken
-            ferdigheter IQ eller EQ. JTI kartlegger og belyser den enkeltes-
-            eller teamets- preferanser og forskjeller på en analytisk måte.
-            Typeteorien i JTI kan få deg til å betrakte relasjoner, samhandling
-            og kommunikasjon på en ny og spennende måte. JTI som
-            relasjonsverktøy er nyttig for deg som enkeltperson, for ledere, for
-            grupper/ team og for hele organisasjoner. JTI er et anerkjent og
-            internasjonalt verktøy og er utviklet for individplan (JTI) og for
-            team/grupper (Teamkompasset). Begge verktøyene benyttes ofte i
-            forbindelse med organisasjonsutvikling og lederutvikling.
+            JTI er ikke en personlighetstest, og den måler hverken ferdigheter
+            IQ eller EQ. JTI kartlegger og belyser den enkeltes- eller teamets-
+            preferanser og forskjeller på en analytisk måte. Typeteorien i JTI
+            kan få deg til å betrakte relasjoner, samhandling og kommunikasjon
+            på en ny og spennende måte. JTI som relasjonsverktøy er nyttig for
+            deg som enkeltperson, for ledere, for grupper/ team og for hele
+            organisasjoner. JTI er et anerkjent og internasjonalt verktøy og er
+            utviklet for individplan (JTI) og for team/grupper (Teamkompasset).
+            Begge verktøyene benyttes ofte i forbindelse med
+            organisasjonsutvikling og lederutvikling.
           </p>
         </div>
         <div>
@@ -62,7 +59,6 @@ export default function OmJTI() {
           </p>
         </div>
       </div>
-
       <h1 style={{ backgroundColor: "lightblue" }}>
         Korte litt ned på disse listene nedenfor? Det er litt mye tekst og det
         kan være vanskelig å finne informasjon man er ute etter. Eventuelt
