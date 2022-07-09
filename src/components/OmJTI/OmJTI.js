@@ -12,10 +12,17 @@ export default function OmJTI() {
           <video
             controls
             src={
-              "https://rr2---sn-5go7ynl6.c.drive.google.com/videoplayback?expire=1657371301&ei=ZULJYozGD4XUu7APgqaf2AU&ip=51.175.205.48&cp=QVRKWURfUFNOQlhPOktWNWFPeVp5OTJoQnN5ZUZ2YkYwZFIydmw3dmoxTGEzVU91eHgxZXRXLXY&id=88b169d74beacfb6&itag=18&source=webdrive&requiressl=yes&mh=Jf&mm=32&mn=sn-5go7ynl6&ms=su&mv=m&mvi=2&pl=18&ttl=transient&susc=dr&driveid=1APSRoL8XGWQhNkeuC7--84XSoyMkcPrP&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=284.960&lmt=1657200148479625&mt=1657356526&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAP3dvED5cA0l6q_hsMwpcAYX4S-p3YZxyKvNede6raxoAiEAtJhD-x3rCj1YwAqtpK3DSXUcGQvYA66V1lu1_rNolW0=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhANafIXoJnNwY_3TXp0P4qhxUEzSNJC07xhHNqnT0OrffAiApS58qsn8quy4qw0W0J7Qs19B1vO_zkk57_rHS160T1g==&cpn=LhTuQP8Xh05_6dbW&c=WEB_EMBEDDED_PLAYER&cver=1.20220629.01.00"
+              "https://drive.google.com/uc?id=1APSRoL8XGWQhNkeuC7--84XSoyMkcPrP"
             }
+            type="video/mp4"
             style={{ width: "80%", height: "auto" }}
           />
+          {/* <iframe
+            src="https://drive.google.com/file/d/1APSRoL8XGWQhNkeuC7--84XSoyMkcPrP/preview"
+            width="640"
+            height="480"
+            // allow="autoplay"
+          ></iframe> */}
         </div>
         <div>
           <h2>
