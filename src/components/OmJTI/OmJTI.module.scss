@@ -1,3 +1,9 @@
+@use "../../styles/layout.scss";
+
+.body{
+  margin: 50px layout.$body-margin;
+
+}
 .ul {
 flex: 1}
 .container{

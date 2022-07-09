@@ -38,7 +38,7 @@ export const jti_iconsData = [
   {
     id: 2,
     src: icon3,
-    title: "JTI og Teamkompasset for team og organisasjoner",
+    title: "JTI for organisasjoner",
     description: "Optimaliser hvordan ansatte på din arbeidsplass sammarbeider",
     shortListItems: [],
     listItems: [
