@@ -40,7 +40,7 @@ export default function OmJTI() {
             for hele organisasjoner. JTI er et anerkjent og internasjonalt
             verktøy og er utviklet for individplan (JTI) og for team/grupper
             (Teamkompasset). Begge verktøyene benyttes ofte i forbindelse med
-            organisasjonsutvikling og lederutvikling.
+            organisasjonsutvikling og lederutvikling. test min venn
           </p>
         </div>
         <div>
