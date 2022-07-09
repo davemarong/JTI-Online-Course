@@ -12,7 +12,7 @@ export default function omOss({
     <div>
       <Nav isLogged={isLogged} />
       <OmOss />
-      <div>
+      {/* <div>
         <p>
           Dine preferanser påvirker deg kanskje mer enn du er klar over! Har du
           lyst til å forstå mer om hvordan dine preferanser påvirker deg, dine
@@ -28,7 +28,7 @@ export default function omOss({
           Begge verktøyene benyttes ofte i forbindelse med
           organisasjonsutvikling og lederutvikling.
         </p>
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

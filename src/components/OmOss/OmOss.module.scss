@@ -23,6 +23,7 @@
   }
   .aboutUs_mainSection {
     display: flex;
+    flex-direction: column;
     gap: 70px;
     margin: layout.$body-margin;
     .aboutUs_mainSection_text {
