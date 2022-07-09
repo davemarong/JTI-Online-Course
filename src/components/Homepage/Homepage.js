@@ -12,7 +12,7 @@ export default function Homepage() {
     <div>
       <div className={styles.topSection}>
         <h1 className={styles.topSection_h1}>
-          Hvordan forstå styrkene til menneskene rundt deg?
+          Hvordan forstå egne og andres styrker og forskjeller?
         </h1>
         <p className={styles.topSection_p}>
           {/* Bruk JTI til å optimalisere og effektivisere samspill på din

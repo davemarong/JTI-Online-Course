@@ -27,9 +27,10 @@ export default function Home({ jwt, isLogged }) {
         }}
       >
         <p>
-          Dine preferanser påvirker deg kanskje mer enn du er klar over! Har du
-          lyst til å forstå mer om hvordan dine preferanser påvirker deg, dine
-          handlinger og dine relasjoner? Da er JTI et godt verktøy.
+          Det er ingen tvil om at hvert menneske er unikt, men dine preferanser
+          påvirker deg kanskje mer enn du er klar over? Har du lyst til å forstå
+          mer om hvordan dine preferanser påvirker deg, dine handlinger og dine
+          relasjoner? Da er JTI et godt verktøy.
         </p>
       </div>
       <JTI_Icons />

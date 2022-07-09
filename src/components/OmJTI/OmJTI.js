@@ -1,38 +1,39 @@
 import React from "react";
 import styles from "./OmJTI.module.scss";
+import { jti_iconsData } from "../JTI_Icons/JTI_IconsData";
+import { TeamKompasset } from "../TeamKompasset/TeamKompasset";
+// import film from "../../../film.mp4";
+
 export default function OmJTI() {
   return (
     <div>
       <h1 style={{ textAlign: "center", backgroundColor: "lightblue" }}>
         JTI overskrift
       </h1>
-      <div style={{ margin: 100 }}>
-        <div
-          style={{
-            padding: "200px 100px",
-            border: "1px solid grey",
-            boxShadow: "0 0 3px",
-          }}
-        >
-          <h2 style={{ backgroundColor: "lightblue" }}>
-            En video hvor du kort forklarer JTI her? Da kan vi vise frem
-            kvaliteten på kurs/ video og fiske inn kunder.
-          </h2>
+      <div>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <video
+            controls
+            src={
+              "https://rr2---sn-5go7ynl6.c.drive.google.com/videoplayback?expire=1657371301&ei=ZULJYozGD4XUu7APgqaf2AU&ip=51.175.205.48&cp=QVRKWURfUFNOQlhPOktWNWFPeVp5OTJoQnN5ZUZ2YkYwZFIydmw3dmoxTGEzVU91eHgxZXRXLXY&id=88b169d74beacfb6&itag=18&source=webdrive&requiressl=yes&mh=Jf&mm=32&mn=sn-5go7ynl6&ms=su&mv=m&mvi=2&pl=18&ttl=transient&susc=dr&driveid=1APSRoL8XGWQhNkeuC7--84XSoyMkcPrP&app=explorer&mime=video/mp4&vprv=1&prv=1&dur=284.960&lmt=1657200148479625&mt=1657356526&subapp=DRIVE_WEB_FILE_VIEWER&txp=0011224&sparams=expire,ei,ip,cp,id,itag,source,requiressl,ttl,susc,driveid,app,mime,vprv,prv,dur,lmt&sig=AOq0QJ8wRgIhAP3dvED5cA0l6q_hsMwpcAYX4S-p3YZxyKvNede6raxoAiEAtJhD-x3rCj1YwAqtpK3DSXUcGQvYA66V1lu1_rNolW0=&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRQIhANafIXoJnNwY_3TXp0P4qhxUEzSNJC07xhHNqnT0OrffAiApS58qsn8quy4qw0W0J7Qs19B1vO_zkk57_rHS160T1g==&cpn=LhTuQP8Xh05_6dbW&c=WEB_EMBEDDED_PLAYER&cver=1.20220629.01.00"
+            }
+            style={{ width: "800px", height: "400px" }}
+          />
         </div>
         <div>
-          <h2 style={{ textAlign: "center", backgroundColor: "lightblue" }}>
-            Mini overskrift?
+          <h2>
+            Det er viktig å huske på at typeteorier har sine begrensninger! JTI
+            er ikke en personlighetstest, og den måler hverken ferdigheter IQ
+            eller EQ. JTI kartlegger og belyser den enkeltes- eller teamets-
+            preferanser og forskjeller på en analytisk måte.
           </h2>
           <p>
-            JTI er ikke en personlighetstest, og den måler hverken ferdigheter
-            IQ eller EQ. JTI kartlegger og belyser den enkeltes- eller teamets-
-            preferanser og forskjeller på en analytisk måte. Typeteorien i JTI
-            kan få deg til å betrakte relasjoner, samhandling og kommunikasjon
-            på en ny og spennende måte. JTI som relasjonsverktøy er nyttig for
-            deg som enkeltperson, for ledere, for grupper/ team og for hele
-            organisasjoner. JTI er et anerkjent og internasjonalt verktøy og er
-            utviklet for individplan (JTI) og for team/grupper (Teamkompasset).
-            Begge verktøyene benyttes ofte i forbindelse med
+            JTI kan få deg til å betrakte relasjoner, samhandling og
+            kommunikasjon på en ny og spennende måte. JTI som relasjonsverktøy
+            er nyttig for deg som enkeltperson, for ledere, for grupper/ team og
+            for hele organisasjoner. JTI er et anerkjent og internasjonalt
+            verktøy og er utviklet for individplan (JTI) og for team/grupper
+            (Teamkompasset). Begge verktøyene benyttes ofte i forbindelse med
             organisasjonsutvikling og lederutvikling.
           </p>
         </div>
@@ -65,94 +66,21 @@ export default function OmJTI() {
         splitte denne opp i flere "komponenter/avsnitt" og ha egne overskrifter.
       </h1>
       <div className={styles.container}>
-        <ul className={styles.ul}>
-          <h3>Fakta om JTI</h3>
-          <h2 style={{ backgroundColor: "lightblue" }}>
-            Ha et bilde her? et vektor icon for eksempel.
-          </h2>
-          <li>
-            JTI bygger på Carl Jungs typeteori, og måler personlige preferanser
-            innen fire dimensjoner i personligheten (se under)
-          </li>
-          <li>JTI er et ikke evaluerende psykologisk verktøy</li>
-          <li>
-            Viser dine preferanser, hva du foretrekker når du står fritt til å
-            velge
-          </li>
-          <li>JTI belyser først og fremst styrker og forskjeller</li>
-          <li>Godt utprøvd, basert på grundig teori og grundig forskning</li>
-          <li>Laget for normale mennesker i normale livssituasjoner</li>
-          <li>Profesjonelt administrert og tolket</li>
-          <li>
-            Utviklet av Optimas org. Psykologer AS, fundamentert i Meyers Brigg
-          </li>
-          <li>
-            JTI finnes på følgende språk: Norsk, Svensk, Dansk, Engelsk,
-            Nederlandsk, Polsk, Tysk, Flamsk, Finsk, Estisk, Latvisk, Lithuansk,
-            Italiensk, Fransk, Spansk og Mandarin
-          </li>
-          <li>Kvalitetssikret av DNV-GL (Veritas)</li>
-        </ul>
-        <ul className={styles.ul}>
-          <h3> Hva kan JTI bidra med for enkeltpersoner</h3>
-          <h2 style={{ backgroundColor: "lightblue" }}>
-            Ha et bilde her? et vektor icon for eksempel.
-          </h2>
-          <li>
-            Sette pris på egne og andres spesielle evner og styrker. Lære
-            hvordan jeg skal utnytte mine og andres styrker
-          </li>
-          <li>
-            Å øke din lære om hvordan vi som mennesker oppfatter tilgjengelig
-            informasjon.
-          </li>
-          <li>Forstå hvordan du passer i din jobb</li>
-          <li>Yrkes og karrierevalg</li>
-          <li>
-            Diskutere dine reaksjoner og følelser ut fra et objektivt rammeverk
-          </li>
-          <li>Kommunisere mer effektivt med andre</li>
-          <li>Samarbeide bedre hjemme og på jobben</li>
-          <li>
-            Å forstå hvorfor noe faller lett for enkelte, og vanskelig for andre
-          </li>
-          <li>Forstå hvorfor man lettere finner tonen med enkelte</li>
-          <li>Å få en bedre motivasjon</li>
-          <li>
-            Bruke kunnskapen om personlighetstyper til å forstå deg selv og
-            dynamikken i relasjoner
-          </li>
-          <li>
-            Bli mer bevisst og kunne forbedre de områder jeg kanskje overser
-            eller som ikke faller så lett for meg
-          </li>
-        </ul>
-        <ul className={styles.ul}>
-          <h3> Hva kan JTI bidra med for organisasjonen</h3>
-          <h2 style={{ backgroundColor: "lightblue" }}>
-            Ha et bilde her? et vektor icon for eksempel.
-          </h2>
-          <li>
-            Få en logisk ordnet modell for menneskelig adferd, en teori som er
-            enkel å forstå
-          </li>
-          <li>
-            Få et logisk oversiktlig verktøy og en god tilnærming til
-            psykososiale temaer i bedriften
-          </li>
-          <li>Konflikthåndtering/ redusere uproduktive konflikter</li>
-          <li>Kompetanseutvikling / personlig utvikling</li>
-          <li>Relasjon og kommunikasjonsforståelse</li>
-          <li>Arbeidsmiljøutvikling</li>
-          <li>Læringsstil</li>
-          <li>Karriereutvikling og karriererådgivning</li>
-          <li>Teamutvikling</li>
-          <li>Lederutvikling</li>
-          <li>Ledelsesrådgivning</li>
-          <li>Identifisere styrker og muligheter i grupper</li>
-          <li>Bygge opp forståelse for normer og kultur</li>
-        </ul>
+        {jti_iconsData.map((item) => {
+          return (
+            <ul className={styles.ul}>
+              <h3>{item.title}</h3>
+              <h2 style={{ backgroundColor: "lightblue" }}>
+                Ha et bilde her? et vektor icon for eksempel.
+              </h2>
+              {item.listItems.map((listItem) => {
+                return <li>{listItem}</li>;
+              })}
+            </ul>
+          );
+        })}
       </div>
+      <TeamKompasset />
     </div>
   );
 }
