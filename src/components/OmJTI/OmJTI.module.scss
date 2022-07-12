@@ -1,11 +1,12 @@
 @use "../../styles/layout.scss";
 
-.body{
+.body {
   margin: 50px layout.$body-margin;
-
-}
-.ul {
-flex: 1}
-.container{
-display: flex; 
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  h1,
+  h3 {
+    text-align: center;
+  }
 }

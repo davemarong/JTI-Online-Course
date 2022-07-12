@@ -1,14 +1,12 @@
 // IMPORT
 
-// REACT
-
-// REACT NATIVE
-
-// REACT_NATIVE_ELEMENTS
+// NEXT
 
 // COMPONENTS
 
 // UTILS
+
+// STYLES
 
 // DATA
 
