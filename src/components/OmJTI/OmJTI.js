@@ -14,6 +14,7 @@ export default function OmJTI() {
           height="auto"
           src="https://drive.google.com/uc?id=1APSRoL8XGWQhNkeuC7--84XSoyMkcPrP"
         />
+
         <h2>
           Det er viktig å huske på at typeteorier har sine begrensninger! JTI er
           ikke en personlighetstest, og den måler hverken ferdigheter IQ eller
