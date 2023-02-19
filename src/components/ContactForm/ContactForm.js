@@ -2,9 +2,9 @@ import React, { useState } from "react";
 // MUI
 import TextField from "@mui/material/TextField";
 
-import styles from "./Contact.module.scss";
-import { usePostContactData } from "./usePostContactData";
-export default function Contact() {
+import styles from "./ContactForm.module.scss";
+import { usePostContactFormData } from "./usePostContactFormData";
+export default function ContactForm() {
   const [firstname, setFirstname] = useState();
   const [lastname, setLastname] = useState();
   const [email, setEmail] = useState();
@@ -17,7 +17,7 @@ export default function Contact() {
   const handleCompany = (e) => setCompany(e.target.value);
   const handleMessage = (e) => setMessage(e.target.value);
 
-  const contactData = {
+  const contactFormData = {
     data: {
       firstname: firstname,
       lastname: lastname,
@@ -27,7 +27,7 @@ export default function Contact() {
     },
   };
 
-  const [postData, loading] = usePostContactData(contactData);
+  const [postData, loading] = usePostContactFormData(contactFormData);
 
   return (
     <div className={styles.contact}>

@@ -7,6 +7,8 @@ export const NavItemsPublic = [
   { title: "Kontakt", href: "/kontakt", id: 4 },
   // { title: "Registrer", href: "/registrer", id: 5 },
   { title: "Logg Inn", href: "/logg-inn", id: 5 },
+  { title: "Admin", href: "/admin", id: 6 },
+
   // { title: "Bli Medlem", href: "/bli-medlem", id: 6 },
 
   // { title: "Checkout", href: "/checkout", id: 7 },
@@ -18,6 +20,7 @@ export const NavItemsLoggedIn = [
   { title: "JTI", href: "/jti", id: 3 },
   { title: "Om Oss", href: "/om-oss", id: 4 },
   { title: "Kontakt", href: "/kontakt", id: 5 },
+  { title: "Admin", href: "/admin", id: 6 },
   // { title: "Registrer", href: "/registrer", id: 5 },
   // { title: "Logg Inn", href: "/logg-inn", id: 6 },
   // { title: "Checkout", href: "/checkout", id: 7 },
