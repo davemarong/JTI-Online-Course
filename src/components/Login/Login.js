@@ -14,6 +14,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import styles from "./Login.module.scss";
 // Other
 import axios from "axios";
+import { localBaseUrl } from "src/constants/constants";
 
 // FUNCTIONAL COMPONENT
 export default function Register({ setJwt, setIsLogged }) {
@@ -32,7 +33,7 @@ export default function Register({ setJwt, setIsLogged }) {
   const handleLoginUser = () => {
     setIsLoading(true);
     axios
-      .post("http://localhost:1337/auth/local", {
+      .post(process.env.NEXT_PUBLIC_LOCAL_BASEURL + "auth/local", {
         identifier: username,
         password: password,
       })
