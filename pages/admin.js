@@ -4,14 +4,14 @@ import Header from "src/components/Header/Header";
 import Nav from "src/components/Nav/Nav";
 import UserList from "src/components/UserList/Userlist";
 
-export default function admin({ jwt, isLogged }) {
+export default function admin({ jwt, isLogged, admin }) {
   return (
     <div>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <Header>Users</Header>
       <UserList jwt={jwt} />
       <Header>Contacts requests</Header>
-      <ContactList />
+      <ContactList jwt={jwt} />
     </div>
   );
 }

@@ -4,10 +4,10 @@ import Footer from "../src/components/Footer/Footer";
 import Nav from "../src/components/Nav/Nav";
 import OmJTI from "../src/components/OmJTI/OmJTI";
 
-export default function jti({ isLogged }) {
+export default function jti({ isLogged, admin }) {
   return (
     <div>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <OmJTI />
       <Footer />
     </div>

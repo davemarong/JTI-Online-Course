@@ -7,10 +7,11 @@ export default function omOss({
   jwt,
   setCurrentVideo,
   currentVideo,
+  admin,
 }) {
   return (
     <div>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <OmOss />
       {/* <div>
         <p>

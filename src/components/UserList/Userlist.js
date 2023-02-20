@@ -10,7 +10,7 @@ import useUpdateUserLicense from "../useCustomHook/useUpdateUserLicense";
 import SelectLicense from "./SelectLicense";
 
 export default function UserList({ jwt }) {
-  const users = useFetchData("users");
+  const users = useFetchData({ fetchQuery: "users", jwt: jwt });
   const updateUserLicense = useUpdateUserLicense();
 
   return (

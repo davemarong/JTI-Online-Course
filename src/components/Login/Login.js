@@ -17,7 +17,7 @@ import axios from "axios";
 import { localBaseUrl } from "src/constants/constants";
 
 // FUNCTIONAL COMPONENT
-export default function Register({ setJwt, setIsLogged }) {
+export default function Register({ setJwt, setIsLogged, setAdmin }) {
   //   State
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
@@ -40,6 +40,7 @@ export default function Register({ setJwt, setIsLogged }) {
       .then((response) => {
         console.log("User profile", response.data.user);
         setJwt(response.data.jwt);
+        setAdmin(response.data.user.admin);
         setIsLogged(true);
         setIsLoading(false);
         Router.push("/kurs");

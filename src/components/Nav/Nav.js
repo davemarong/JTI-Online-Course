@@ -13,7 +13,7 @@ import IconButton from "@mui/material/IconButton";
 // Framer motion
 import { motion, useCycle } from "framer-motion";
 // Components
-import { NavItemsPublic, NavItemsLoggedIn } from "./NavItems";
+import { NavItemsPublic, NavItemsLoggedIn, NavItemsAdmin } from "./NavItems";
 // Styles
 import desktopStyles from "./NavDesktop.module.scss";
 import mobileStyles from "./NavMobile.module.scss";
@@ -21,7 +21,7 @@ import mobileStyles from "./NavMobile.module.scss";
 import logo from "../../../public/images/logo.svg";
 // Functional components
 
-export default function Nav({ isLogged }) {
+export default function Nav({ isLogged, admin }) {
   // State
   const [navItems, setNavItems] = useState(NavItemsPublic);
   const [styles, setStyles] = useState(desktopStyles);
@@ -36,7 +36,12 @@ export default function Nav({ isLogged }) {
   const router = useRouter();
   // Effect
   useEffect(() => {
-    if (isLogged) {
+    if (admin) {
+      console.log("admin");
+      setNavItems(NavItemsAdmin);
+    } else if (isLogged) {
+      console.log("islogged");
+
       setNavItems(NavItemsLoggedIn);
     } else {
       setNavItems(NavItemsPublic);

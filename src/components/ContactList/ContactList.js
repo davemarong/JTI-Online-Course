@@ -7,8 +7,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-export default function ContactList() {
-  const contacts = useFetchData("contacts");
+export default function ContactList({ jwt }) {
+  const contacts = useFetchData({ fetchQuery: "contacts", jwt: jwt });
   return (
     <Container maxWidth="md">
       {contacts?.data.map((contact) => {
