@@ -10,7 +10,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function ContactList({ jwt }) {
   const contacts = useFetchData({ fetchQuery: "contacts", jwt: jwt });
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" style={{ margin: "30px 0 100px 0" }}>
       {contacts?.data.map((contact) => {
         return (
           <Accordion key={contact.id}>

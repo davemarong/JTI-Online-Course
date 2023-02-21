@@ -14,8 +14,11 @@ export default function UserList({ jwt }) {
   const updateUserLicense = useUpdateUserLicense();
 
   return (
-    <Container maxWidth="lg">
-      <Table>
+    <Container
+      maxWidth="lg"
+      style={{ maxHeight: 500, overflow: "scroll", marginBottom: 50 }}
+    >
+      <Table stickyHeader size="small">
         <TableHead>
           <TableRow>
             <TableCell>Brukernavn</TableCell>
