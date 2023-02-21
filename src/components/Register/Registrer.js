@@ -36,7 +36,7 @@ export default function Registrer({ setJwt, setPaid }) {
     setIsLoading(true);
 
     axios
-      .post("http://localhost:1337/auth/local/register", {
+      .post("http://localhost:1337/api/auth/local/register", {
         username: username,
         email: email,
         password: password,

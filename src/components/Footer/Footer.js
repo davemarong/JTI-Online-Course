@@ -45,8 +45,8 @@ export default function Footer({ isLogged }) {
         })}
       </ul>
       <p className={styles.copyright}>
-        © 2022 JTI Online Kurs. Alle rettigheter reservert. Nettside av{" "}
-        <a className={styles.codebydave} href="www.codebydave.no">
+        © 2023 JTI Online Kurs. Alle rettigheter reservert. Nettside av{" "}
+        <a className={styles.codebydave} href="www.davekjellmarong.no">
           Marong Utvikling
         </a>
         .

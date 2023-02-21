@@ -4,10 +4,10 @@ import Footer from "../src/components/Footer/Footer";
 import KursInfo from "../src/components/KursInfo/KursInfo";
 import Nav from "../src/components/Nav/Nav";
 import styles from "../src/styles/pages/BliMedlem.module.scss";
-export default function bliMedlem({ setCourse, course, isLogged }) {
+export default function bliMedlem({ setCourse, course, isLogged, admin }) {
   return (
     <>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <div className={styles.body}>
         <BliMedlem setCourse={setCourse} />
         <KursInfo />

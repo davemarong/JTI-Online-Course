@@ -16,12 +16,13 @@ export default function videoPage({
   currentVideo,
   jwt,
   isLogged,
+  admin,
 }) {
   const router = useRouter();
   const { video } = router.query;
   return (
     <>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <div className={styles.body}>
         <div className={styles.videoPlayer}>
           <Video />

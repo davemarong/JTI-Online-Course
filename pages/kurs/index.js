@@ -15,11 +15,12 @@ export default function index({
   setCurrentVideo,
   currentVideo,
   jwt,
+  admin,
 }) {
   // State
   return (
     <>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <div className={styles.body}>
         <div className={styles.videoPlayer}>
           <Video />

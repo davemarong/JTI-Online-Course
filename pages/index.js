@@ -5,7 +5,7 @@ import Reviews from "../src/components/Reviews/Reviews";
 import JTI_Icons from "../src/components/JTI_Icons/JTI_Icons";
 import HowToUse from "../src/components/HowToUse/HowToUse";
 import Footer from "../src/components/Footer/Footer";
-export default function Home({ jwt, isLogged }) {
+export default function Home({ jwt, isLogged, admin }) {
   return (
     <div>
       {jwt}
@@ -15,7 +15,7 @@ export default function Home({ jwt, isLogged }) {
           rel="stylesheet"
         />
       </Head>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       <Homepage />
       <div
         style={{

@@ -3,6 +3,7 @@ import "../src/styles/globals.scss";
 
 function MyApp({ Component, pageProps }) {
   const [jwt, setJwt] = useState();
+  const [admin, setAdmin] = useState();
   const [isLogged, setIsLogged] = useState(false);
   const [paid, setPaid] = useState(false);
   const [currentVideo, setCurrentVideo] = useState("nope");
@@ -17,6 +18,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <Component
       {...pageProps}
+      admin={admin}
+      setAdmin={setAdmin}
       jwt={jwt}
       setJwt={setJwt}
       isLogged={isLogged}

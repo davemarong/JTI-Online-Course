@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Registrer from "../src/components/Register/Registrer";
 import Nav from "../src/components/Nav/Nav";
-export default function registrer({ paid, setPaid, isLogged }) {
+
+export default function registrer({ paid, setPaid, isLogged, admin }) {
   // Effect
   useEffect(() => {
     const paid = localStorage.getItem("Paid");
@@ -11,7 +12,7 @@ export default function registrer({ paid, setPaid, isLogged }) {
   }, []);
   return (
     <div>
-      <Nav isLogged={isLogged} />
+      <Nav isLogged={isLogged} admin={admin} />
       {paid ? <Registrer setPaid={setPaid} /> : "Du har ikke betalt"}
       <button
         onClick={() => {
