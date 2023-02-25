@@ -6,6 +6,7 @@ import JTI_Icons from "../src/components/JTI_Icons/JTI_Icons";
 import HowToUse from "../src/components/HowToUse/HowToUse";
 import Footer from "../src/components/Footer/Footer";
 export default function Home({ jwt, isLogged, admin }) {
+  console.log(process.env.NEXT_PUBLIC_BASEURL);
   return (
     <div>
       {jwt}
