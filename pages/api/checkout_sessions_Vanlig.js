@@ -13,8 +13,8 @@ export default async function handler(req, res) {
         ],
         payment_method_types: ["card"],
         mode: "payment",
-        success_url: `http://localhost:3000/checkout/?success=true&session_id={CHECKOUT_SESSION_ID}`,
-        cancel_url: `http://localhost:3000/checkout/?canceled=true`,
+        success_url: `${req.headers.origin}/checkout/?success=true&session_id={CHECKOUT_SESSION_ID}`,
+        cancel_url: `${req.headers.origin}/checkout/?canceled=true`,
       });
 
       res.redirect(303, session.url);

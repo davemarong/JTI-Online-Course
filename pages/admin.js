@@ -12,15 +12,22 @@ export default function admin({ jwt, isLogged, admin }) {
   const openModal = () => setOpen(true);
   return (
     <>
-      <Nav isLogged={isLogged} admin={admin} />
-      <Header>Users</Header>
-      <Button onClick={openModal}>Create new user</Button>
-      <Modal open={open} setOpen={setOpen}>
-        <AddUser />
-      </Modal>
-      <UserList jwt={jwt} />
-      <Header>Contacts requests</Header>
-      <ContactList jwt={jwt} />
+      {admin ? (
+        <>
+          <Nav isLogged={isLogged} admin={admin} />
+          <Header>Users</Header>
+          <Button onClick={openModal}>Create new user</Button>
+          <Modal open={open} setOpen={setOpen}>
+            <AddUser />
+          </Modal>
+
+          <UserList jwt={jwt} />
+          <Header>Contacts requests</Header>
+          <ContactList jwt={jwt} />
+        </>
+      ) : (
+        <Header>Du har ikke tilgang til denne siden</Header>
+      )}
     </>
   );
 }
