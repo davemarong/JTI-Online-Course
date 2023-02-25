@@ -1,8 +1,5 @@
+var nodemailer = require("nodemailer");
 exports.handler = async function (event, context) {
-  console.log(event);
-  console.log(context);
-  var nodemailer = require("nodemailer");
-
   var transporter = nodemailer.createTransport({
     service: "outlook",
     auth: {
@@ -25,4 +22,13 @@ exports.handler = async function (event, context) {
       console.log("Email sent: " + info.response);
     }
   });
+  console.log(event);
+  console.log(context);
+  return {
+    statusCode: 200,
+    body: JSON.stringify({
+      message: "Hello World",
+      envvar: process.env.EMAIL_PASSWORD,
+    }),
+  };
 };
