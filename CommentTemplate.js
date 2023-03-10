@@ -8,7 +8,7 @@
 
 // STYLES
 
-// DATA
+//  DATA
 
 // FUNCTIONAL COMPONENTS
 export const Nav = () => {
